@@ -1,0 +1,188 @@
+/* ==========================================
+   فصل ۹ علوم — ماشین‌ها
+========================================== */
+
+@import url('science-lesson1.css');
+
+/* ==========================================
+   اجزای اهرم
+========================================== */
+.lever-parts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.part-card {
+  padding: 14px 12px;
+  background: linear-gradient(135deg, #f5fffe, #e0f2f1);
+  border: 2px solid #e0f2f1;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.part-card:active {
+  transform: scale(0.97);
+  border-color: #009688;
+}
+
+.part-icon {
+  font-size: 1.8em;
+  margin-bottom: 6px;
+}
+
+.part-card h3 {
+  font-size: 1em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 4px;
+}
+
+.part-card p {
+  font-size: 0.85em;
+  color: #555;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* ==========================================
+   ۳ نوع اهرم
+========================================== */
+.lever-types-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.lever-card {
+  padding: 20px 16px;
+  border-radius: 16px;
+  border: 2px solid;
+  text-align: center;
+}
+
+.lever-1 {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-color: #2196f3;
+}
+
+.lever-2 {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border-color: #4caf50;
+}
+
+.lever-3 {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-color: #ff9800;
+}
+
+.lever-icon {
+  font-size: 2em;
+  margin-bottom: 8px;
+  color: #00695c;
+}
+
+.lever-card h3 {
+  font-size: 1.1em;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.lever-1 h3 { color: #1565c0; }
+.lever-2 h3 { color: #2e7d32; }
+.lever-3 h3 { color: #e65100; }
+
+.lever-desc {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.lever-desc b {
+  color: #00695c;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1px 6px;
+  border-radius: 6px;
+}
+
+.lever-examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.ex-item {
+  font-size: 0.82em;
+  font-weight: 700;
+  color: #333;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 8px;
+}
+
+/* ==========================================
+   لیست ماشین‌های دیگر
+========================================== */
+.props-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.prop-card {
+  padding: 16px;
+  background: white;
+  border: 2px solid #e0f2f1;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.prop-card:active {
+  transform: scale(0.97);
+  border-color: #009688;
+}
+
+.prop-icon {
+  font-size: 2em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.prop-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.prop-desc {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .part-icon { font-size: 1.5em; }
+  .part-card h3 { font-size: 0.9em; }
+  .lever-icon { font-size: 1.6em; }
+  .lever-card h3 { font-size: 1em; }
+  .ex-item { font-size: 0.75em; padding: 4px 8px; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .lever-parts { grid-template-columns: repeat(4, 1fr); }
+  .lever-types-grid { grid-template-columns: repeat(3, 1fr); }
+  .props-list { grid-template-columns: repeat(2, 1fr); }
+}

@@ -1,0 +1,184 @@
+/* ==========================================
+   فصل ۸ ریاضی — آمار و احتمال
+========================================== */
+
+@import url('math-lesson1.css');
+
+/* ==========================================
+   مثال محاسبه آمار
+========================================== */
+.example-stats {
+  margin-top: 16px;
+  padding: 18px 16px;
+  background: linear-gradient(135deg, #f5f6ff, #e8eaf6);
+  border-radius: 16px;
+  border: 2px solid #3f51b5;
+}
+
+.example-header {
+  font-family: 'Georgia', 'Vazirmatn', serif;
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #1a237e;
+  text-align: center;
+  padding: 10px 12px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(63, 81, 181, 0.15);
+}
+
+.example-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.example-row:last-child {
+  margin-bottom: 0;
+}
+
+.row-label {
+  font-size: 0.92em;
+  font-weight: 900;
+  color: #1a237e;
+  min-width: 70px;
+  padding: 4px 10px;
+  background: #e8eaf6;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.row-calc {
+  font-family: 'Georgia', 'Vazirmatn', serif;
+  font-size: 0.92em;
+  color: #333;
+  direction: ltr;
+  flex: 1;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* ==========================================
+   شبکه سکه
+========================================== */
+.coin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.coin-card {
+  padding: 18px 14px;
+  background: linear-gradient(135deg, #fff9c4, #fff59d);
+  border: 2px solid #ffc107;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.coin-card:active {
+  transform: scale(0.97);
+}
+
+.coin-icon {
+  font-size: 2.5em;
+  margin-bottom: 8px;
+}
+
+.coin-card h3 {
+  font-size: 1.1em;
+  font-weight: 900;
+  color: #f57f17;
+  margin-bottom: 6px;
+}
+
+.coin-card p {
+  font-family: 'Georgia', serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #333;
+  direction: ltr;
+}
+
+/* ==========================================
+   جدول
+========================================== */
+.conj-table .arabic {
+  font-family: 'Vazirmatn', sans-serif;
+  font-weight: 900;
+  color: #1a237e;
+}
+
+.conj-table .meaning-cell {
+  font-family: 'Georgia', 'Vazirmatn', serif;
+  direction: ltr;
+}
+
+/* ==========================================
+   لیست آیتم‌ها
+========================================== */
+.props-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.prop-card {
+  padding: 16px;
+  background: white;
+  border: 2px solid #e8eaf6;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.prop-card:active {
+  transform: scale(0.97);
+  border-color: #3f51b5;
+}
+
+.prop-icon {
+  font-size: 2em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.prop-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #1a237e;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.prop-desc {
+  font-size: 0.92em;
+  color: #666;
+  line-height: 1.8;
+  text-align: center;
+  font-family: 'Georgia', 'Vazirmatn', serif;
+  direction: ltr;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .example-header { font-size: 0.9em; }
+  .row-label { font-size: 0.82em; min-width: 60px; }
+  .row-calc { font-size: 0.82em; }
+  .coin-icon { font-size: 2em; }
+  .coin-card h3 { font-size: 1em; }
+  .coin-card p { font-size: 0.85em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .props-list { grid-template-columns: repeat(2, 1fr); }
+}

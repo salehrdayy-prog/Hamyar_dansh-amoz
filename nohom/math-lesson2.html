@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3f51b5">
+  <title>فصل ۲: عددهای حقیقی — ریاضی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="math-style.css">
+  <link rel="stylesheet" href="math-lesson1.css">
+  <link rel="stylesheet" href="math-lesson2.css">
+</head>
+<body>
+
+  <header class="app-header math-header">
+    <a href="math.html" class="back-btn">→</a>
+    <h1>🔢 فصل ۲</h1>
+    <p class="subtitle">عددهای حقیقی</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="sets">📊 مجموعه‌ها</button>
+    <button class="lesson-tab" data-tab="radical">√ رادیکال</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: آموزش -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>🔢 عددهای حقیقی</h2>
+      <p class="card-hint">
+        همه اعداد روی محور — شامل اعداد گویا (کسری) و گنگ (رادیکالی). با ℝ نشان می‌دهیم.
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">ℚ</div>
+          <h3>گویا</h3>
+          <p>کسری a/b</p>
+          <div class="motel-example">1/2 · 0.75 · 3</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">𝕀</div>
+          <h3>گنگ</h3>
+          <p>رادیکالی غیرکامل</p>
+          <div class="motel-example">√2 · π · √3</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">ℝ</div>
+          <h3>حقیقی</h3>
+          <p>گویا + گنگ</p>
+          <div class="motel-example">همه اعداد</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📖 مجموعه‌های عددی</h2>
+
+      <div class="tip-box">
+        <strong>ℕ اعداد طبیعی</strong>
+        <p>{1, 2, 3, 4, ...}</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>𝕎 اعداد حسابی</strong>
+        <p>{0, 1, 2, 3, ...}</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>ℤ اعداد صحیح</strong>
+        <p>{..., -2, -1, 0, 1, 2, ...}</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>ℚ اعداد گویا</strong>
+        <p>هر عددی که به شکل a/b نوشته شود (b ≠ 0)</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>𝕀 اعداد گنگ</strong>
+        <p>اعدادی که کسری نیستند — √2، √3، π</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>ℝ اعداد حقیقی</strong>
+        <p>ℚ ∪ 𝕀 = ℝ</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💡 رابطه مجموعه‌ها</h2>
+      <div class="sets-diagram">
+        <div class="set-box set-R">
+          <div class="set-label">ℝ (حقیقی)</div>
+          <div class="set-inner">
+            <div class="set-box set-Q">
+              <div class="set-label">ℚ (گویا)</div>
+              <div class="set-inner">
+                <div class="set-box set-Z">
+                  <div class="set-label">ℤ (صحیح)</div>
+                  <div class="set-inner">
+                    <div class="set-box set-W">
+                      <div class="set-label">𝕎</div>
+                      <div class="set-inner">
+                        <div class="set-box set-N">
+                          <div class="set-label">ℕ</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="set-box set-I">
+              <div class="set-label">𝕀 (گنگ)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="card-hint" style="margin-top:12px;text-align:center">
+        ℕ ⊂ 𝕎 ⊂ ℤ ⊂ ℚ ⊂ ℝ و 𝕀 ⊂ ℝ
+      </p>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: مجموعه‌ها -->
+  <section class="lesson-section" data-section="sets">
+
+    <div class="card">
+      <h2>📊 مجموعه‌های عددی</h2>
+      <p class="card-hint">روی هر دسته بزن تا اطلاعات کامل را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="basic">🔢 پایه</button>
+        <button class="motel-tab" data-type="rational">ℚ گویا</button>
+        <button class="motel-tab" data-type="irrational">𝕀 گنگ</button>
+        <button class="motel-tab" data-type="real">ℝ حقیقی</button>
+      </div>
+
+      <div id="setsList" class="props-list"></div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: رادیکال -->
+  <section class="lesson-section" data-section="radical">
+
+    <div class="card">
+      <h2>√ رادیکال و ریشه</h2>
+
+      <div class="formula-box">
+        <div class="formula-title">📐 نماد رادیکال</div>
+        <div class="radical-diagram">
+          <div class="radical-visual">√<span class="radicand">a</span></div>
+          <div class="radical-labels">
+            <span class="label-radicand">a = فرجه (عدد زیر رادیکال)</span>
+            <span class="label-result">√a = عددی که در خودش ضرب شود a می‌دهد</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-box" style="margin-top:16px">
+        <strong>📌 ریشه دوم (جذر)</strong>
+        <p>√4 = 2 (چون 2×2=4)</p>
+        <p>√9 = 3 (چون 3×3=9)</p>
+        <p>√16 = 4 (چون 4×4=16)</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 رادیکال کامل</strong>
+        <p>اگر عدد زیر رادیکال، مربع یک عدد صحیح باشد، رادیکال کامل است.</p>
+        <p>√1، √4، √9، √16، √25، √36، √49، √64، √81، √100</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 ساده کردن رادیکال</strong>
+        <p>√12 = √(4×3) = √4 × √3 = 2√3</p>
+        <p>√50 = √(25×2) = √25 × √2 = 5√2</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 گنگ یا گویا؟</strong>
+        <p>√4 = 2 (گویا)</p>
+        <p>√2 ≈ 1.414... (گنگ)</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 جدول رادیکال‌های مهم</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>رادیکال</th>
+            <th>مقدار</th>
+            <th>نوع</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="arabic">√1</td><td class="meaning-cell">1</td><td class="meaning-cell">گویا (کامل)</td></tr>
+          <tr><td class="arabic">√2</td><td class="meaning-cell">≈ 1.414</td><td class="meaning-cell">گنگ</td></tr>
+          <tr><td class="arabic">√3</td><td class="meaning-cell">≈ 1.732</td><td class="meaning-cell">گنگ</td></tr>
+          <tr><td class="arabic">√4</td><td class="meaning-cell">2</td><td class="meaning-cell">گویا (کامل)</td></tr>
+          <tr><td class="arabic">√5</td><td class="meaning-cell">≈ 2.236</td><td class="meaning-cell">گنگ</td></tr>
+          <tr><td class="arabic">√9</td><td class="meaning-cell">3</td><td class="meaning-cell">گویا (کامل)</td></tr>
+          <tr><td class="arabic">√16</td><td class="meaning-cell">4</td><td class="meaning-cell">گویا (کامل)</td></tr>
+          <tr><td class="arabic">√25</td><td class="meaning-cell">5</td><td class="meaning-cell">گویا (کامل)</td></tr>
+          <tr><td class="arabic">π</td><td class="meaning-cell">≈ 3.14159</td><td class="meaning-cell">گنگ</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- تب ۴: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">پاسخ درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۵: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۶: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: تشخیص سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — ریاضی نهم — فصل ۲</p>
+  </footer>
+
+  <script src="math-lesson2.js"></script>
+</body>
+</html>

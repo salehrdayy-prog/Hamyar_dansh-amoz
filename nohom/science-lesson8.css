@@ -1,0 +1,203 @@
+/* ==========================================
+   فصل ۸ علوم — فشار و آثار آن
+========================================== */
+
+@import url('science-lesson1.css');
+
+/* ==========================================
+   فرمول فشار
+========================================== */
+.formula-box {
+  background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
+  padding: 20px 16px;
+  border-radius: 16px;
+  border: 2px solid #009688;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.formula-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 16px;
+}
+
+.formula {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.fraction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numerator {
+  border-bottom: 3px solid #00695c;
+  padding: 4px 16px 6px;
+  font-size: 1em;
+  font-weight: 900;
+  color: #00695c;
+}
+
+.denominator {
+  padding: 6px 16px;
+  font-size: 1em;
+  font-weight: 900;
+  color: #00695c;
+}
+
+.equals {
+  font-size: 1.8em;
+  font-weight: 900;
+  color: #00695c;
+}
+
+.result {
+  font-size: 1.1em;
+  font-weight: 900;
+  color: #00695c;
+  padding: 12px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 150, 136, 0.2);
+}
+
+/* ==========================================
+   شبکه کاربردها
+========================================== */
+.apps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.app-card {
+  padding: 18px 16px;
+  background: white;
+  border: 2px solid #e0f2f1;
+  border-radius: 14px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.app-card:active {
+  transform: scale(0.97);
+  border-color: #009688;
+}
+
+.app-icon {
+  font-size: 2.2em;
+  margin-bottom: 8px;
+}
+
+.app-card h3 {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 8px;
+}
+
+.app-card p {
+  font-size: 0.88em;
+  color: #555;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* ==========================================
+   قانون پاسکال
+========================================== */
+.pascal-law {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  padding: 22px 18px;
+  border-radius: 16px;
+  border: 2px solid #2196f3;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.law-icon {
+  font-size: 2.5em;
+  margin-bottom: 8px;
+}
+
+.pascal-law h3 {
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #1565c0;
+  margin-bottom: 12px;
+}
+
+.law-desc {
+  font-size: 0.92em;
+  color: #444;
+  line-height: 1.9;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.law-formula {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.formula-part {
+  font-family: 'Georgia', serif;
+  font-size: 1.1em;
+  font-weight: 900;
+  color: #1565c0;
+  background: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
+  direction: ltr;
+}
+
+.formula-equal {
+  font-size: 1.4em;
+  font-weight: 900;
+  color: #1565c0;
+}
+
+.law-app {
+  font-size: 0.88em;
+  color: #1565c0;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 8px 14px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .formula { gap: 8px; }
+  .numerator, .denominator { padding: 3px 10px; font-size: 0.9em; }
+  .equals { font-size: 1.5em; }
+  .result { font-size: 0.95em; padding: 10px 14px; }
+  .app-icon { font-size: 1.8em; }
+  .law-icon { font-size: 2em; }
+  .formula-part { font-size: 1em; padding: 8px 12px; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .apps-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 800px) {
+  .apps-grid { grid-template-columns: repeat(3, 1fr); }
+}

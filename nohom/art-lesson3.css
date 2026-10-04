@@ -1,0 +1,156 @@
+/* ==========================================
+   درس ۳ نقاشی — طراحی از طبیعت
+========================================== */
+
+@import url('art-lesson1.css');
+
+/* ==========================================
+   لیست گام‌ها
+========================================== */
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.step-item {
+  display: flex;
+  gap: 14px;
+  padding: 16px;
+  background: white;
+  border-radius: 14px;
+  border: 2px solid #fce4ec;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.step-item:active {
+  transform: scale(0.98);
+}
+
+.step-item:hover {
+  border-color: #e91e63;
+}
+
+.step-item.expanded {
+  border-color: #e91e63;
+  background: linear-gradient(135deg, #ffffff 0%, #fef5f9 100%);
+}
+
+.step-number {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e91e63, #ad1457);
+  color: white;
+  font-size: 1.2em;
+  font-weight: 900;
+  border-radius: 12px;
+  flex-shrink: 0;
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+.step-content {
+  flex: 1;
+  text-align: right;
+}
+
+.step-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #ad1457;
+  margin-bottom: 4px;
+}
+
+.step-desc {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.8;
+}
+
+.step-visual {
+  margin-top: 10px;
+  padding: 12px;
+  background: #fef5f9;
+  border-radius: 10px;
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 8px;
+  color: #ad1457;
+  display: none;
+}
+
+.step-item.expanded .step-visual {
+  display: block;
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ==========================================
+   نمونه‌ها
+========================================== */
+.examples-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.example-item {
+  padding: 18px 16px;
+  background: white;
+  border: 2px solid #fce4ec;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.example-item:active {
+  transform: scale(0.97);
+}
+
+.example-visual {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.example-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #ad1457;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.example-desc {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .step-number {
+    width: 36px;
+    height: 36px;
+    font-size: 1em;
+  }
+  .step-title { font-size: 0.95em; }
+  .example-visual { font-size: 2.2em; }
+  .step-visual { font-size: 1.5em; letter-spacing: 4px; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .examples-list { grid-template-columns: repeat(2, 1fr); }
+}

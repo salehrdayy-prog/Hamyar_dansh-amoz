@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e91e63">
+  <title>درس ۵: طراحی اشیا — نقاشی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="art-style.css">
+  <link rel="stylesheet" href="art-lesson1.css">
+  <link rel="stylesheet" href="art-lesson5.css">
+</head>
+<body>
+
+  <header class="app-header art-header">
+    <a href="art.html" class="back-btn">→</a>
+    <h1>🎨 درس ۵</h1>
+    <p class="subtitle">طراحی اشیا</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="objects">🍎 اشیا</button>
+    <button class="lesson-tab" data-tab="shading">🌓 سایه‌زنی</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: آموزش -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>🍎 طراحی اشیا</h2>
+      <p class="card-hint">
+        طراحی اشیا یکی از بهترین تمرین‌ها برای یادگیری حجم، سایه و نور است.
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">🍎</div>
+          <h3>اشیا ساده</h3>
+          <p>میوه، لیوان، کتاب</p>
+          <div class="motel-example">🍎 ☕ 📚</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">🏺</div>
+          <h3>اشیا حجم‌دار</h3>
+          <p>گلدان، کوزه، بطری</p>
+          <div class="motel-example">🏺 🍶 🫙</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">🎸</div>
+          <h3>اشیا پیچیده</h3>
+          <p>آلات موسیقی، چراغ</p>
+          <div class="motel-example">🎸 🎺 💡</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🎯 نکات مهم طراحی اشیا</h2>
+
+      <div class="tip-box">
+        <strong>۱. اول شکل هندسی</strong>
+        <p>هر شیء را اول به شکل‌های هندسی ساده تجزیه کن.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>۲. تناسب را ببین</strong>
+        <p>ارتفاع و عرض شیء را مقایسه کن.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>۳. بیضی‌ها را فراموش نکن</strong>
+        <p>دهانه لیوان، گلدان و کوزه بیضی است — نه خط صاف!</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>۴. سایه‌پردازی</strong>
+        <p>سایه، شیء را سه‌بعدی نشان می‌دهد.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📦 شکل‌های هندسی پایه</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>شکل</th>
+            <th>نمونه شیء</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="arabic">◯ استوانه</td><td class="meaning-cell">لیوان، بطری، قوطی</td></tr>
+          <tr><td class="arabic">⬛ مکعب</td><td class="meaning-cell">کتاب، جعبه، تبلت</td></tr>
+          <tr><td class="arabic">◉ کره</td><td class="meaning-cell">سیب، پرتقال، توپ</td></tr>
+          <tr><td class="arabic">△ مخروط</td><td class="meaning-cell">بستنی، کلاه جشن</td></tr>
+          <tr><td class="arabic">⬭ بیضی</td><td class="meaning-cell">تخم‌مرغ، هندوانه</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: اشیا -->
+  <section class="lesson-section" data-section="objects">
+
+    <div class="card">
+      <h2>🍎 نمونه اشیا</h2>
+      <p class="card-hint">روی هر دسته بزن تا نکات طراحی آن را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="fruit">🍎 میوه</button>
+        <button class="motel-tab" data-type="cup">☕ لیوان</button>
+        <button class="motel-tab" data-type="book">📚 کتاب</button>
+        <button class="motel-tab" data-type="vase">🏺 گلدان</button>
+      </div>
+
+      <div id="objectsList" class="objects-list"></div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: سایه‌زنی -->
+  <section class="lesson-section" data-section="shading">
+
+    <div class="card">
+      <h2>🌓 سایه‌زنی و نور</h2>
+      <p class="card-hint">
+        بدون سایه، طرح‌ها تخت به نظر می‌رسند. سایه، حجم می‌سازد.
+      </p>
+
+      <div class="shade-grid">
+        <div class="shade-card">
+          <div class="shade-icon">💡</div>
+          <h3>منبع نور</h3>
+          <p>جایی که نور از آن می‌آید. سمت مخالف، سایه می‌افتد.</p>
+        </div>
+
+        <div class="shade-card">
+          <div class="shade-icon">☀️</div>
+          <h3>نور مستقیم</h3>
+          <p>جایی که نور مستقیم به شیء می‌تابد. روشن‌ترین نقطه.</p>
+        </div>
+
+        <div class="shade-card">
+          <div class="shade-icon">🌓</div>
+          <h3>نیم‌سایه</h3>
+          <p>منطقه بین روشن و تاریک. نرم و ملایم.</p>
+        </div>
+
+        <div class="shade-card">
+          <div class="shade-icon">⬛</div>
+          <h3>سایه تیره</h3>
+          <p>جایی که نور نمی‌رسد. تیره‌ترین نقطه روی شیء.</p>
+        </div>
+
+        <div class="shade-card">
+          <div class="shade-icon">🌑</div>
+          <h3>سایه افتاده</h3>
+          <p>سایه‌ای که شیء روی زمین می‌اندازد.</p>
+        </div>
+
+        <div class="shade-card">
+          <div class="shade-icon">✨</div>
+          <h3>بازتاب نور</h3>
+          <p>نور ملایم که از زمین به شیء منعکس می‌شود.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 مراحل سایه‌زنی</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>گام</th>
+            <th>کار</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="arabic">۱</td><td class="meaning-cell">مشخص کردن منبع نور</td></tr>
+          <tr><td class="arabic">۲</td><td class="meaning-cell">سایه‌زنی با خطوط نازک</td></tr>
+          <tr><td class="arabic">۳</td><td class="meaning-cell">تیره کردن تدریجی</td></tr>
+          <tr><td class="arabic">۴</td><td class="meaning-cell">اضافه کردن نیم‌سایه</td></tr>
+          <tr><td class="arabic">۵</td><td class="meaning-cell">سایه افتاده روی زمین</td></tr>
+          <tr><td class="arabic">۶</td><td class="meaning-cell">ایجاد کنتراست نهایی</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- تب ۴: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">پاسخ درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۵: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۶: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: تشخیص سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — نقاشی نهم — درس ۵</p>
+  </footer>
+
+  <script src="art-lesson5.js"></script>
+</body>
+</html>

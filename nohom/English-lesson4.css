@@ -1,0 +1,44 @@
+/* ==========================================
+   Lesson 4 — Healthy Lifestyle
+========================================== */
+
+@import url('english-lesson1.css');
+
+/* قواعد گرامری این درس */
+.rule-box {
+  border-right-color: #ff9800;
+}
+
+.rule-box h3 {
+  color: #e65100;
+}
+
+.rule-desc b {
+  color: #e65100;
+  background: #fff3e0;
+  padding: 1px 6px;
+  border-radius: 6px;
+}
+
+/* جدول خلاصه */
+.conj-table td.arabic {
+  font-family: 'Georgia', serif;
+  direction: ltr;
+  font-size: 1em;
+}
+
+.conj-table td.meaning-cell {
+  font-family: 'Vazirmatn', sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+/* موبایل */
+@media (max-width: 360px) {
+  .conj-table {
+    font-size: 0.75em;
+  }
+  .conj-table th, .conj-table td {
+    padding: 8px 4px;
+  }
+}

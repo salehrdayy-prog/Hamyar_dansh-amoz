@@ -1,0 +1,279 @@
+/* ==========================================
+   استایل اختصاصی درس ۳ عربی نهم — امر و نهی
+========================================== */
+
+/* ==========================================
+   کارت‌های انواع امر
+========================================== */
+.motel-types {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.motel-card {
+  padding: 18px 16px;
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid;
+}
+
+.motel-mithal {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-color: #2196f3;
+}
+
+.motel-ajwaf {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border-color: #4caf50;
+}
+
+.motel-naqes {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-color: #ff9800;
+}
+
+.motel-icon {
+  font-size: 2em;
+  margin-bottom: 6px;
+}
+
+.motel-card h3 {
+  font-size: 1.15em;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.motel-mithal h3 { color: #1565c0; }
+.motel-ajwaf h3 { color: #2e7d32; }
+.motel-naqes h3 { color: #e65100; }
+
+.motel-card p {
+  font-size: 0.88em;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.motel-example {
+  font-family: 'Amiri', serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #2c3e50;
+  direction: rtl;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+/* ==========================================
+   جعبه نکته
+========================================== */
+.tip-box {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+  padding: 16px;
+  border-radius: 12px;
+  border-right: 5px solid #ffc107;
+  margin-top: 12px;
+}
+
+.tip-box strong {
+  color: #e65100;
+  font-size: 1.05em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tip-box p {
+  font-family: 'Amiri', 'Vazirmatn', serif;
+  font-size: 1.1em;
+  color: #333;
+  margin: 6px 0;
+  line-height: 1.8;
+}
+
+.tip-box-small {
+  background: #fff8e1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border-right: 4px solid #ffc107;
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: #333;
+  line-height: 1.7;
+}
+
+.tip-box-small b {
+  color: #e65100;
+}
+
+/* ==========================================
+   قواعد روش ساخت
+========================================== */
+.rule-text {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  font-weight: 700;
+  color: #2e7d32;
+  text-align: center;
+  font-size: 0.95em;
+}
+
+.rule-box {
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.rule-box h3 {
+  color: #4caf50;
+  margin-bottom: 12px;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.rule-desc {
+  font-size: 0.92em;
+  color: #555;
+  line-height: 1.9;
+  margin-bottom: 8px;
+}
+
+/* ==========================================
+   جدول جمع‌بندی
+========================================== */
+.summary-table th,
+.summary-table td {
+  font-size: 0.85em;
+  padding: 10px 6px;
+}
+
+.type-mithal { color: #1565c0; font-weight: 900; }
+.type-ajwaf  { color: #2e7d32; font-weight: 900; }
+.type-naqes  { color: #e65100; font-weight: 900; }
+
+/* ==========================================
+   تب‌های امر/نهی
+========================================== */
+.motel-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.motel-tab {
+  padding: 12px 20px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 700;
+  color: #666;
+  transition: all 0.3s;
+  flex: 1;
+  min-width: 120px;
+}
+
+.motel-tab:active {
+  transform: scale(0.97);
+}
+
+.motel-tab[data-type="amr"].active {
+  background: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.motel-tab[data-type="nahi"].active {
+  background: #f44336;
+  color: white;
+  border-color: #f44336;
+}
+
+/* ==========================================
+   کارت‌های افعال
+========================================== */
+.verbs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.verb-btn {
+  padding: 16px 10px;
+  border: 2px solid #4caf50;
+  background: white;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: 'Amiri', 'Vazirmatn', serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #2e7d32;
+  transition: all 0.3s;
+  line-height: 1.3;
+}
+
+.verb-btn:active,
+.verb-btn.active {
+  background: #4caf50;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(76, 175, 80, 0.3);
+}
+
+.verb-btn .meaning {
+  display: block;
+  font-family: 'Vazirmatn', sans-serif;
+  font-size: 0.5em;
+  font-weight: 500;
+  margin-top: 6px;
+  opacity: 0.85;
+}
+
+.verb-btn .verb-type {
+  display: block;
+  font-family: 'Vazirmatn', sans-serif;
+  font-size: 0.45em;
+  font-weight: 700;
+  margin-top: 4px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.08);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .verbs-grid {
+    grid-template-columns: 1fr;
+  }
+  .motel-tab {
+    font-size: 0.85em;
+    padding: 8px 12px;
+  }
+  .summary-table {
+    font-size: 0.75em;
+  }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .motel-types {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .verbs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3f51b5">
+  <title>فصل ۳: استدلال و اثبات — ریاضی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="math-style.css">
+  <link rel="stylesheet" href="math-lesson1.css">
+  <link rel="stylesheet" href="math-lesson3.css">
+</head>
+<body>
+
+  <header class="app-header math-header">
+    <a href="math.html" class="back-btn">→</a>
+    <h1>🔢 فصل ۳</h1>
+    <p class="subtitle">استدلال و اثبات</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="types">🧠 انواع استدلال</button>
+    <button class="lesson-tab" data-tab="proof">📐 روش‌های اثبات</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: آموزش -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>🧠 استدلال چیست؟</h2>
+      <p class="card-hint">
+        استدلال، فرایند رسیدن از اطلاعات معلوم به نتیجه‌گیری است. در ریاضی، استدلال پایه همه چیز است.
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">🎯</div>
+          <h3>استدلال استنتاجی</h3>
+          <p>از کلی به جزئی</p>
+          <div class="motel-example">مطمئن و قطعی</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">📊</div>
+          <h3>استدلال استقرایی</h3>
+          <p>از جزئی به کلی</p>
+          <div class="motel-example">احتمالی</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">🔄</div>
+          <h3>استدلال تمثیلی</h3>
+          <p>مقایسه دو چیز</p>
+          <div class="motel-example">تشبیه</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📖 تفاوت استدلال و اثبات</h2>
+
+      <div class="tip-box">
+        <strong>🧠 استدلال</strong>
+        <p>فرایند فکری برای رسیدن به نتیجه.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📐 اثبات</strong>
+        <p>نشان دادن درستی یک حکم با استدلال‌های منطقی و دقیق.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>⚠️ فرق مهم</strong>
+        <p>«درست بودن در چند مثال» = اثبات نیست!</p>
+        <p>مثال: ۳، ۵، ۷ اول‌اند، ولی ۹ اول نیست.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💡 اجزای یک اثبات ریاضی</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>جزء</th>
+            <th>توضیح</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="arabic">فرض</td>
+            <td class="meaning-cell">اطلاعات داده‌شده (آنچه می‌دانیم)</td>
+          </tr>
+          <tr>
+            <td class="arabic">حکم</td>
+            <td class="meaning-cell">آنچه می‌خواهیم اثبات کنیم</td>
+          </tr>
+          <tr>
+            <td class="arabic">استدلال</td>
+            <td class="meaning-cell">مراحل رسیدن از فرض به حکم</td>
+          </tr>
+          <tr>
+            <td class="arabic">نتیجه</td>
+            <td class="meaning-cell">حکم اثبات‌شده</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: انواع استدلال -->
+  <section class="lesson-section" data-section="types">
+
+    <div class="card">
+      <h2>🧠 انواع استدلال</h2>
+      <p class="card-hint">روی هر نوع بزن تا اطلاعات کامل را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="deductive">🎯 استنتاجی</button>
+        <button class="motel-tab" data-type="inductive">📊 استقرایی</button>
+        <button class="motel-tab" data-type="analogy">🔄 تمثیلی</button>
+      </div>
+
+      <div id="typesList" class="props-list"></div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: روش‌های اثبات -->
+  <section class="lesson-section" data-section="proof">
+
+    <div class="card">
+      <h2>📐 روش‌های اثبات</h2>
+      <p class="card-hint">روی هر روش بزن تا اطلاعات کامل را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="direct">➡️ مستقیم</button>
+        <button class="motel-tab" data-type="contradiction">🔄 خلف</button>
+        <button class="motel-tab" data-type="counter">❌ مثال نقض</button>
+      </div>
+
+      <div id="proofList" class="props-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>🎯 مثال کاربردی</h2>
+
+      <div class="example-proof">
+        <div class="proof-step">
+          <div class="step-num">۱</div>
+          <div class="step-content">
+            <strong>فرض:</strong>
+            <p>a و b دو عدد زوج هستند.</p>
+          </div>
+        </div>
+        <div class="proof-step">
+          <div class="step-num">۲</div>
+          <div class="step-content">
+            <strong>می‌خواهیم ثابت کنیم:</strong>
+            <p>a + b هم زوج است.</p>
+          </div>
+        </div>
+        <div class="proof-step">
+          <div class="step-num">۳</div>
+          <div class="step-content">
+            <strong>اثبات:</strong>
+            <p>چون a و b زوج‌اند: a = 2m و b = 2n</p>
+            <p>a + b = 2m + 2n = 2(m+n)</p>
+            <p>که مضرب ۲ است → پس زوج است. ✓</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۴: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">پاسخ درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۵: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۶: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: تشخیص سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — ریاضی نهم — فصل ۳</p>
+  </footer>
+
+  <script src="math-lesson3.js"></script>
+</body>
+</html>

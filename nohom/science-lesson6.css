@@ -1,0 +1,223 @@
+/* ==========================================
+   فصل ۶ علوم — زمین‌ساخت ورقه‌ای
+========================================== */
+
+@import url('science-lesson1.css');
+
+/* ==========================================
+   دیاگرام لایه‌های زمین
+========================================== */
+.earth-diagram {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: 20px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(255, 152, 0, 0.4);
+}
+
+.earth-layer {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Vazirmatn', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.earth-crust {
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, #8bc34a, #558b2f);
+  font-size: 0.85em;
+  align-items: flex-start;
+  padding-top: 8px;
+}
+
+.earth-mantle {
+  inset: 12%;
+  background: radial-gradient(circle, #ff5722, #d84315);
+  font-size: 0.9em;
+}
+
+.earth-outer-core {
+  inset: 40%;
+  background: radial-gradient(circle, #ffeb3b, #f57f17);
+  color: #333;
+  font-size: 0.75em;
+}
+
+.earth-inner-core {
+  inset: 65%;
+  background: radial-gradient(circle, #fff9c4, #fbc02d);
+  color: #333;
+  font-size: 0.7em;
+}
+
+/* ==========================================
+   کارت‌های انواع ورقه
+========================================== */
+.plate-types {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.plate-card {
+  padding: 20px 18px;
+  border-radius: 16px;
+  border: 2px solid;
+  text-align: center;
+}
+
+.plate-divergent {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border-color: #4caf50;
+}
+
+.plate-convergent {
+  background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+  border-color: #f44336;
+}
+
+.plate-transform {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-color: #ff9800;
+}
+
+.plate-icon {
+  font-size: 2.2em;
+  margin-bottom: 8px;
+  font-weight: 900;
+}
+
+.plate-card h3 {
+  font-size: 1.15em;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.plate-divergent h3 { color: #2e7d32; }
+.plate-convergent h3 { color: #c62828; }
+.plate-transform h3 { color: #e65100; }
+
+.plate-desc {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.plate-example {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.88em;
+  color: #333;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.ex-label {
+  font-weight: 900;
+  color: #00695c;
+  margin-left: 4px;
+}
+
+/* ==========================================
+   کارت‌های پدیده‌ها
+========================================== */
+.event-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.event-card {
+  padding: 18px 16px;
+  border-radius: 14px;
+  border: 2px solid;
+  text-align: center;
+}
+
+.event-quake {
+  background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+  border-color: #f44336;
+}
+
+.event-volcano {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-color: #ff9800;
+}
+
+.event-mountain {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-color: #2196f3;
+}
+
+.event-tsunami {
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+  border-color: #00bcd4;
+}
+
+.event-icon {
+  font-size: 2.2em;
+  margin-bottom: 8px;
+}
+
+.event-card h3 {
+  font-size: 1.1em;
+  font-weight: 900;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.event-quake h3 { color: #c62828; }
+.event-volcano h3 { color: #e65100; }
+.event-mountain h3 { color: #1565c0; }
+.event-tsunami h3 { color: #00838f; }
+
+.event-desc {
+  font-size: 0.88em;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.event-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.event-facts span {
+  font-size: 0.8em;
+  color: #333;
+  font-weight: 600;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .earth-diagram { width: 220px; height: 220px; }
+  .plate-icon { font-size: 1.8em; }
+  .event-icon { font-size: 1.8em; }
+  .plate-card h3 { font-size: 1.05em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .plate-types { grid-template-columns: repeat(3, 1fr); }
+  .event-grid { grid-template-columns: repeat(2, 1fr); }
+}

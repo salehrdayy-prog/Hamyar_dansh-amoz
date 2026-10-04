@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3f51b5">
+  <title>فصل ۴: توان و ریشه — ریاضی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="math-style.css">
+  <link rel="stylesheet" href="math-lesson1.css">
+  <link rel="stylesheet" href="math-lesson4.css">
+</head>
+<body>
+
+  <header class="app-header math-header">
+    <a href="math.html" class="back-btn">→</a>
+    <h1>🔢 فصل ۴</h1>
+    <p class="subtitle">توان و ریشه</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="rules">📐 قواعد توان</button>
+    <button class="lesson-tab" data-tab="radical">√ ریشه</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: آموزش -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>⚡ توان چیست؟</h2>
+      <p class="card-hint">
+        توان، ضرب یک عدد در خودش به تعداد مشخص. به شکل <b>aⁿ</b> نوشته می‌شود.
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">a</div>
+          <h3>پایه</h3>
+          <p>عددی که ضرب می‌شود</p>
+          <div class="motel-example">۳ در ۳²</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">n</div>
+          <h3>نما</h3>
+          <p>تعداد ضرب</p>
+          <div class="motel-example">۲ در ۳²</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">⚡</div>
+          <h3>توان</h3>
+          <p>حاصل ضرب</p>
+          <div class="motel-example">۳² = ۹</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📖 مثال‌های توان</h2>
+
+      <div class="formula-box">
+        <div class="formula-title">📐 نمایش توان</div>
+        <div class="power-diagram">
+          <div class="power-visual">
+            <span class="base">۳</span>
+            <span class="exponent">۲</span>
+          </div>
+          <div class="power-meaning">۳ × ۳ = ۹</div>
+        </div>
+      </div>
+
+      <div class="tip-box" style="margin-top:16px">
+        <strong>📌 چند مثال</strong>
+        <p>۲³ = ۲ × ۲ × ۲ = ۸</p>
+        <p>۵² = ۵ × ۵ = ۲۵</p>
+        <p>۱۰³ = ۱۰ × ۱۰ × ۱۰ = ۱۰۰۰</p>
+        <p>۲⁴ = ۲ × ۲ × ۲ × ۲ = ۱۶</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 توان صفر</strong>
+        <p>هر عدد (به جز صفر) به توان ۰ برابر ۱ است: a⁰ = ۱</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 توان یک</strong>
+        <p>هر عدد به توان ۱ برابر خودش است: a¹ = a</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💡 نکات مهم</h2>
+
+      <div class="tip-box">
+        <strong>📌 توان منفی</strong>
+        <p>a⁻ⁿ = ۱ / aⁿ</p>
+        <p>مثال: ۲⁻³ = ۱/۸</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 پایه منفی</strong>
+        <p>اگر نما زوج باشد → نتیجه مثبت: (-۲)² = ۴</p>
+        <p>اگر نما فرد باشد → نتیجه منفی: (-۲)³ = -۸</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 توان کسری</strong>
+        <p>a^(1/n) = ⁿ√a (ریشه nام)</p>
+        <p>مثال: ۸^(1/3) = ∛۸ = ۲</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: قواعد توان -->
+  <section class="lesson-section" data-section="rules">
+
+    <div class="card">
+      <h2>📐 قواعد توان</h2>
+      <p class="card-hint">روی هر قاعده بزن تا اطلاعات کامل را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="multiply">✖️ ضرب</button>
+        <button class="motel-tab" data-type="divide">➗ تقسیم</button>
+        <button class="motel-tab" data-type="power">⚡ توان توان</button>
+        <button class="motel-tab" data-type="special">🎯 خاص</button>
+      </div>
+
+      <div id="rulesList" class="props-list"></div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: ریشه -->
+  <section class="lesson-section" data-section="radical">
+
+    <div class="card">
+      <h2>√ ریشه و رادیکال</h2>
+      <p class="card-hint">روی هر دسته بزن تا اطلاعات کامل را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="basic">√ ریشه دوم</button>
+        <button class="motel-tab" data-type="simplify">🔧 ساده کردن</button>
+        <button class="motel-tab" data-type="operations">➕ عملیات</button>
+      </div>
+
+      <div id="radicalList" class="props-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>📊 جدول ریشه‌های مهم</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>رادیکال</th>
+            <th>مقدار</th>
+            <th>ساده‌شده</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="arabic">√8</td><td class="meaning-cell">2.83</td><td class="meaning-cell">2√2</td></tr>
+          <tr><td class="arabic">√12</td><td class="meaning-cell">3.46</td><td class="meaning-cell">2√3</td></tr>
+          <tr><td class="arabic">√18</td><td class="meaning-cell">4.24</td><td class="meaning-cell">3√2</td></tr>
+          <tr><td class="arabic">√20</td><td class="meaning-cell">4.47</td><td class="meaning-cell">2√5</td></tr>
+          <tr><td class="arabic">√24</td><td class="meaning-cell">4.90</td><td class="meaning-cell">2√6</td></tr>
+          <tr><td class="arabic">√32</td><td class="meaning-cell">5.66</td><td class="meaning-cell">4√2</td></tr>
+          <tr><td class="arabic">√50</td><td class="meaning-cell">7.07</td><td class="meaning-cell">5√2</td></tr>
+          <tr><td class="arabic">√72</td><td class="meaning-cell">8.49</td><td class="meaning-cell">6√2</td></tr>
+          <tr><td class="arabic">√98</td><td class="meaning-cell">9.90</td><td class="meaning-cell">7√2</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- تب ۴: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">پاسخ درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۵: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۶: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: تشخیص سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — ریاضی نهم — فصل ۴</p>
+  </footer>
+
+  <script src="math-lesson4.js"></script>
+</body>
+</html>

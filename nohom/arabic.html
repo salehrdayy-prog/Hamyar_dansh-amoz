@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4caf50">
+  <title>عربی نهم — همیار دانش‌آموز</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="arabic-style.css">
+</head>
+<body>
+
+  <!-- هدر با دکمه بازگشت -->
+  <header class="app-header arabic-header">
+    <a href="index.html" class="back-btn">→</a>
+    <h1>📖 عربی نهم</h1>
+    <p class="subtitle">۱۰ درس — از ماضی تا ترجمه</p>
+  </header>
+
+  <!-- خوش‌آمدگویی -->
+  <div class="welcome-card arabic-welcome">
+    <span class="welcome-icon">🌙</span>
+    <div class="welcome-text">
+      <strong>به عربی نهم خوش اومدی!</strong>
+      <span>یک درس رو انتخاب کن</span>
+    </div>
+  </div>
+
+  <!-- لیست دروس -->
+  <main class="main-content">
+    <h2 class="section-title">📚 درس‌ها</h2>
+
+    <div class="lessons-grid">
+
+      <!-- درس ۱ -->
+      <a href="arabic-lesson1.html" class="lesson-card" data-status="ready">
+        <div class="lesson-number">۱</div>
+        <div class="lesson-info">
+          <h3>فعل ماضی و مضارع</h3>
+          <p>۱۴ صیغه — آموزش کامل با صدا</p>
+        </div>
+        <div class="lesson-status ready">✅</div>
+      </a>
+
+      <!-- درس ۲ -->
+      <a href="arabic-lesson2.html" class="lesson-card" data-status="ready">
+        <div class="lesson-number">۲</div>
+        <div class="lesson-info">
+          <h3>فعل معتل</h3>
+          <p>مثال، اجوف، ناقص</p>
+        </div>
+        <div class="lesson-status ready">✅</div>
+      </a>
+
+      <!-- درس ۳ -->
+      <a href="arabic-lesson3.html" class="lesson-card" data-status="ready">
+        <div class="lesson-number">۳</div>
+        <div class="lesson-info">
+          <h3>فعل امر و نهی</h3>
+          <p>امر حاضر، امر غایب، نهی</p>
+        </div>
+        <div class="lesson-status ready">✅</div>
+      </a>
+
+      <!-- درس ۴ -->
+      <a href="arabic-lesson4.html" class="lesson-card" data-status="ready">
+        <div class="lesson-number">۴</div>
+        <div class="lesson-info">
+          <h3>اسم فاعل و مفعول</h3>
+          <p>ساختار و کاربرد</p>
+        </div>
+        <div class="lesson-status ready">✅</div>
+      </a>
+
+      <!-- درس ۵ -->
+      <a href="arabic-lesson5.html" class="lesson-card" data-status="ready">
+        <div class="lesson-number">۵</div>
+        <div class="lesson-info">
+          <h3>ترجمه متن</h3>
+          <p>متن‌های درسی</p>
+        </div>
+        <div class="lesson-status ready">✅</div>
+      </a>
+
+      <!-- درس ۶ -->
+      <a href="arabic-lesson6.html" class="lesson-card" data-status="ready">
+        <div class="lesson-number">۶</div>
+        <div class="lesson-info">
+          <h3>قواعد ترکیبی</h3>
+          <p>ادامه قواعد</p>
+        </div>
+        <div class="lesson-status ready">✅</div>
+      </a>
+
+      <!-- درس ۷ -->
+      <a href="arabic-lesson7.html" class="lesson-card" data-status="ready">
+        <div class="lesson-number">۷</div>
+        <div class="lesson-info">
+          <h3>تمرین ترکیبی</h3>
+          <p>جمع‌بندی قواعد</p>
+        </div>
+        <div class="lesson-status ready">✅</div>
+      </a>
+
+      <!-- درس ۸ -->
+      <a href="arabic-lesson8.html" class="lesson-card" data-status="ready">
+        <div class="lesson-number">۸</div>
+        <div class="lesson-info">
+          <h3>متن و ترجمه</h3>
+          <p>ادامه متن‌ها</p>
+        </div>
+        <div class="lesson-status ready">✅</div>
+      </a>
+
+      <!-- درس ۹ -->
+      <a href="arabic-lesson9.html" class="lesson-card" data-status="ready">
+        <div class="lesson-number">۹</div>
+        <div class="lesson-info">
+          <h3>قواعد پیشرفته</h3>
+          <p>ادامه مباحث</p>
+        </div>
+        <div class="lesson-status ready">✅</div>
+      </a>
+
+      <!-- درس ۱۰ -->
+      <a href="arabic-lesson10.html" class="lesson-card" data-status="ready">
+        <div class="lesson-number">۱۰</div>
+        <div class="lesson-info">
+          <h3>مرور و جمع‌بندی</h3>
+          <p>آزمون نهایی</p>
+        </div>
+        <div class="lesson-status ready">✅</div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — عربی نهم</p>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    // قفل کردن درس‌های آماده‌نشده
+    document.querySelectorAll('.lesson-card[data-status="coming"]').forEach(card => {
+      card.onclick = (e) => {
+        e.preventDefault();
+        alert('🔒 این درس به زودی اضافه می‌شود!');
+      };
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* ==========================================
+   فصل ۷ علوم — آثاری از گذشته زمین
+========================================== */
+
+@import url('science-lesson1.css');
+
+/* ==========================================
+   شبکه سنگ‌ها
+========================================== */
+.rock-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.rock-card {
+  padding: 20px 18px;
+  border-radius: 16px;
+  border: 2px solid;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.rock-card:active {
+  transform: scale(0.98);
+}
+
+.rock-igneous {
+  background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+  border-color: #f44336;
+}
+
+.rock-sedimentary {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-color: #ff9800;
+}
+
+.rock-metamorphic {
+  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+  border-color: #9c27b0;
+}
+
+.rock-icon {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.rock-card h3 {
+  font-size: 1.15em;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.rock-igneous h3 { color: #c62828; }
+.rock-sedimentary h3 { color: #e65100; }
+.rock-metamorphic h3 { color: #6a1b9a; }
+
+.rock-desc {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.rock-example {
+  font-size: 0.9em;
+  font-weight: 900;
+  color: #333;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.rock-feature {
+  font-size: 0.82em;
+  color: #666;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* ==========================================
+   چرخه سنگ‌ها
+========================================== */
+.rock-cycle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px 12px;
+  background: linear-gradient(135deg, #f5fffe, #e0f2f1);
+  border-radius: 16px;
+  margin-top: 16px;
+}
+
+.cycle-step {
+  text-align: center;
+  padding: 12px 8px;
+  min-width: 70px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.cycle-icon {
+  font-size: 1.8em;
+  margin-bottom: 4px;
+}
+
+.cycle-title {
+  font-size: 0.8em;
+  font-weight: 900;
+  color: #00695c;
+}
+
+.cycle-arrow {
+  font-size: 1.4em;
+  color: #009688;
+  font-weight: 900;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .rock-icon { font-size: 2em; }
+  .rock-card h3 { font-size: 1.05em; }
+  .cycle-step { min-width: 60px; padding: 10px 6px; }
+  .cycle-icon { font-size: 1.5em; }
+  .cycle-arrow { font-size: 1.1em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .rock-grid { grid-template-columns: repeat(3, 1fr); }
+}

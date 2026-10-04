@@ -1,0 +1,97 @@
+/* ==========================================
+   فصل ۳ ریاضی — استدلال و اثبات
+========================================== */
+
+@import url('math-lesson1.css');
+
+/* ==========================================
+   مثال اثبات
+========================================== */
+.example-proof {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.proof-step {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background: linear-gradient(135deg, #f5f6ff, #e8eaf6);
+  border-radius: 12px;
+  border-right: 5px solid #3f51b5;
+  transition: all 0.3s;
+}
+
+.proof-step:active {
+  transform: scale(0.98);
+}
+
+.step-num {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3f51b5, #1a237e);
+  color: white;
+  font-weight: 900;
+  border-radius: 10px;
+  flex-shrink: 0;
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+.step-content {
+  flex: 1;
+  text-align: right;
+}
+
+.step-content strong {
+  display: block;
+  font-size: 0.95em;
+  color: #1a237e;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.step-content p {
+  font-family: 'Georgia', 'Vazirmatn', serif;
+  font-size: 0.95em;
+  color: #333;
+  line-height: 1.9;
+  margin: 4px 0;
+  direction: ltr;
+  text-align: left;
+}
+
+.step-content p:last-child {
+  color: #2e7d32;
+  font-weight: 700;
+  background: #e8f5e9;
+  padding: 6px 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+/* ==========================================
+   جدول
+========================================== */
+.conj-table .arabic {
+  font-family: 'Vazirmatn', sans-serif;
+  font-weight: 900;
+  color: #1a237e;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .step-num {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .step-content strong { font-size: 0.85em; }
+  .step-content p { font-size: 0.85em; }
+}

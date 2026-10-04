@@ -1,0 +1,193 @@
+/* ==========================================
+   درس ۴ نقاشی — طراحی چهره
+========================================== */
+
+@import url('art-lesson1.css');
+
+/* ==========================================
+   لیست نسبت‌ها
+========================================== */
+.proportion-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.proportion-item {
+  display: flex;
+  gap: 14px;
+  padding: 16px;
+  background: white;
+  border-radius: 14px;
+  border: 2px solid #fce4ec;
+  transition: all 0.3s;
+}
+
+.proportion-item:hover {
+  border-color: #e91e63;
+  background: linear-gradient(135deg, #ffffff 0%, #fef5f9 100%);
+}
+
+.prop-icon {
+  font-size: 1.5em;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prop-content {
+  flex: 1;
+  text-align: right;
+}
+
+.prop-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #ad1457;
+  margin-bottom: 4px;
+}
+
+.prop-desc {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   دیاگرام صورت
+========================================== */
+.face-diagram {
+  background: linear-gradient(135deg, #fef5f9 0%, #fce4ec 100%);
+  border-radius: 14px;
+  padding: 20px 16px;
+  margin-top: 16px;
+  overflow-x: auto;
+}
+
+.diagram-art {
+  font-family: 'Courier New', monospace;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #ad1457;
+  text-align: center;
+  direction: ltr;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* ==========================================
+   تب‌های اجزا
+========================================== */
+.motel-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.motel-tab {
+  padding: 10px 14px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.88em;
+  font-weight: 700;
+  color: #666;
+  transition: all 0.3s;
+  flex: 1;
+  min-width: 80px;
+}
+
+.motel-tab:active { transform: scale(0.97); }
+
+.motel-tab[data-type="eyes"].active {
+  background: #2196f3;
+  color: white;
+  border-color: #2196f3;
+}
+.motel-tab[data-type="nose"].active {
+  background: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+.motel-tab[data-type="mouth"].active {
+  background: #e91e63;
+  color: white;
+  border-color: #e91e63;
+}
+.motel-tab[data-type="ears"].active {
+  background: #ff9800;
+  color: white;
+  border-color: #ff9800;
+}
+
+/* ==========================================
+   لیست اجزا
+========================================== */
+.parts-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.part-card {
+  padding: 18px 16px;
+  background: white;
+  border: 2px solid #fce4ec;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.part-card:active {
+  transform: scale(0.97);
+  border-color: #e91e63;
+}
+
+.part-visual {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ad1457;
+}
+
+.part-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #ad1457;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.part-desc {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .motel-tab {
+    font-size: 0.8em;
+    padding: 8px 10px;
+    min-width: 65px;
+  }
+  .prop-icon { font-size: 1.3em; }
+  .prop-title { font-size: 0.95em; }
+  .part-visual { font-size: 2em; }
+  .diagram-art { font-size: 0.75em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .parts-list { grid-template-columns: repeat(2, 1fr); }
+}

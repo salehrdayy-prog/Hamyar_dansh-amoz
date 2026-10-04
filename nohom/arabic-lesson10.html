@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4caf50">
+  <title>درس ۱۰: مرور نهایی — عربی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="arabic-style.css">
+  <link rel="stylesheet" href="arabic-lesson1.css">
+  <link rel="stylesheet" href="arabic-lesson10.css">
+</head>
+<body>
+
+  <header class="app-header arabic-header">
+    <a href="arabic.html" class="back-btn">→</a>
+    <h1>🏆 درس ۱۰</h1>
+    <p class="subtitle">مرور نهایی و جمع‌بندی</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="dashboard">📊 خلاصه</button>
+    <button class="lesson-tab" data-tab="chart">📋 جدول‌ها</button>
+    <button class="lesson-tab" data-tab="finalexam">🎯 آزمون نهایی</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی نهایی</button>
+    <button class="lesson-tab" data-tab="certificate">🏅 کارنامه</button>
+  </nav>
+
+  <!-- تب ۱: خلاصه -->
+  <section class="lesson-section active" data-section="dashboard">
+
+    <div class="card">
+      <h2>🎉 آفرین! به درس ۱۰ رسیدی</h2>
+      <p class="card-hint">
+        این درس، جمع‌بندی کل عربی نهم است. اگر تا اینجا رسیدی، یعنی راه طولانی رو طی کردی!
+      </p>
+
+      <div class="review-grid">
+        <div class="review-card review-1">
+          <div class="review-icon">1️⃣</div>
+          <h3>فعل ماضی</h3>
+          <p>۱۴ صیغه گذشته</p>
+        </div>
+
+        <div class="review-card review-2">
+          <div class="review-icon">2️⃣</div>
+          <h3>فعل مضارع</h3>
+          <p>۱۴ صیغه حال</p>
+        </div>
+
+        <div class="review-card review-3">
+          <div class="review-icon">3️⃣</div>
+          <h3>فعل معتل</h3>
+          <p>مثال، اجوف، ناقص</p>
+        </div>
+
+        <div class="review-card review-4">
+          <div class="review-icon">4️⃣</div>
+          <h3>امر و نهی</h3>
+          <p>دستور و منع</p>
+        </div>
+
+        <div class="review-card review-5">
+          <div class="review-icon">5️⃣</div>
+          <h3>اسم فاعل و مفعول</h3>
+          <p>انجام‌دهنده / انجام‌شده</p>
+        </div>
+
+        <div class="review-card review-6">
+          <div class="review-icon">6️⃣</div>
+          <h3>ترجمه</h3>
+          <p>کلمه‌ای و روان</p>
+        </div>
+
+        <div class="review-card review-1">
+          <div class="review-icon">7️⃣</div>
+          <h3>تمرین ترکیبی</h3>
+          <p>۴ نوع تمرین</p>
+        </div>
+
+        <div class="review-card review-2">
+          <div class="review-icon">8️⃣</div>
+          <h3>متن و ترجمه</h3>
+          <p>متن‌های بلند</p>
+        </div>
+
+        <div class="review-card review-3">
+          <div class="review-icon">9️⃣</div>
+          <h3>قواعد پیشرفته</h3>
+          <p>معرفه، اضافه، صفت</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🎯 هدف این درس</h2>
+      <div class="tip-box">
+        <strong>📌 آزمون نهایی:</strong>
+        <p>۳۰ سؤال از تمام درس‌ها</p>
+      </div>
+      <div class="tip-box" style="margin-top:10px">
+        <strong>🏅 کارنامه:</strong>
+        <p>بعد از آزمون، نمره و سطحت رو می‌بینی</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: جدول‌ها -->
+  <section class="lesson-section" data-section="chart">
+
+    <!-- جدول شناسه‌های ماضی -->
+    <div class="card">
+      <h2>🎓 شناسه‌های ماضی</h2>
+      <div class="table-wrapper">
+        <table class="conj-table">
+          <thead>
+            <tr><th>ضمیر</th><th>شناسه</th><th>مثال</th><th>معنی</th></tr>
+          </thead>
+          <tbody id="madiTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- جدول شناسه‌های مضارع -->
+    <div class="card">
+      <h2>🎓 شناسه‌های مضارع</h2>
+      <div class="table-wrapper">
+        <table class="conj-table">
+          <thead>
+            <tr><th>ضمیر</th><th>شناسه</th><th>مثال</th><th>معنی</th></tr>
+          </thead>
+          <tbody id="mozareTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- جدول اسم فاعل و مفعول -->
+    <div class="card">
+      <h2>🎓 اسم فاعل و مفعول</h2>
+      <div class="table-wrapper">
+        <table class="conj-table">
+          <thead>
+            <tr><th>فعل</th><th>اسم فاعل</th><th>اسم مفعول</th></tr>
+          </thead>
+          <tbody id="nounTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- جدول امر و نهی -->
+    <div class="card">
+      <h2>🎓 امر و نهی</h2>
+      <div class="table-wrapper">
+        <table class="conj-table">
+          <thead>
+            <tr><th>ضمیر</th><th>امر</th><th>نهی</th></tr>
+          </thead>
+          <tbody id="amrTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: آزمون نهایی -->
+  <section class="lesson-section" data-section="finalexam">
+    <div class="card">
+      <h2>🎯 آزمون نهایی جامع</h2>
+      <p class="card-hint">۳۰ سؤال از تمام درس‌های عربی نهم</p>
+
+      <div class="exam-progress-bar">
+        <div class="exam-progress-fill" id="examProgress"></div>
+      </div>
+
+      <div id="finalExamArea">
+        <p id="finalExamQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="finalExamOptions" class="options"></div>
+        <button id="nextFinalQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="finalScore">0</span> / <span id="finalTotal">0</span>
+      </div>
+
+      <button id="startFinalExam" class="btn-primary">شروع آزمون نهایی</button>
+    </div>
+  </section>
+
+  <!-- تب ۴: بازی نهایی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی نهایی: چالش بزرگ!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۱۲۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <!-- تب ۵: کارنامه -->
+  <section class="lesson-section" data-section="certificate">
+
+    <div class="card">
+      <h2>🏅 کارنامه عربی نهم</h2>
+
+      <div id="certificateBox" class="certificate">
+        <div class="cert-header">
+          <div class="cert-icon">🏆</div>
+          <h3>کارنامه عربی نهم</h3>
+          <p>همیار دانش‌آموز</p>
+        </div>
+
+        <div class="cert-stats">
+          <div class="cert-stat">
+            <span class="cert-label">آزمون نهایی</span>
+            <span class="cert-value" id="certScore">—</span>
+          </div>
+          <div class="cert-stat">
+            <span class="cert-label">سطح</span>
+            <span class="cert-value" id="certLevel">—</span>
+          </div>
+          <div class="cert-stat">
+            <span class="cert-label">درس‌های تکمیل‌شده</span>
+            <span class="cert-value" id="certLessons">—</span>
+          </div>
+          <div class="cert-stat">
+            <span class="cert-label">رکورد بازی</span>
+            <span class="cert-value" id="certGameBest">—</span>
+          </div>
+        </div>
+
+        <div class="cert-message" id="certMessage">
+          برای دریافت کارنامه، آزمون نهایی را بده
+        </div>
+      </div>
+
+      <button id="downloadCert" class="btn-primary">📥 ذخیره کارنامه</button>
+      <button id="resetAll" class="btn-danger">🗑️ پاک کردن همه نتایج</button>
+    </div>
+
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — عربی نهم — درس ۱۰</p>
+    <p class="version">🎓 پایان عربی نهم 🎓</p>
+  </footer>
+
+  <script src="arabic-lesson10.js"></script>
+  <script src="../voice.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4caf50">
+  <title>درس ۶: قواعد ترکیبی — عربی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="arabic-style.css">
+  <link rel="stylesheet" href="arabic-lesson1.css">
+  <link rel="stylesheet" href="arabic-lesson6.css">
+</head>
+<body>
+
+  <header class="app-header arabic-header">
+    <a href="arabic.html" class="back-btn">→</a>
+    <h1>📖 درس ۶</h1>
+    <p class="subtitle">قواعد ترکیبی (جمع‌بندی)</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 مرور</button>
+    <button class="lesson-tab" data-tab="rules">🎓 جدول‌ها</button>
+    <button class="lesson-tab" data-tab="compare">📊 مقایسه</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: مرور -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>📖 مرور ۵ درس گذشته</h2>
+      <p class="card-hint">در این درس، همه قواعد عربی نهم رو مرور می‌کنیم.</p>
+
+      <div class="review-grid">
+        <div class="review-card review-1">
+          <div class="review-icon">1️⃣</div>
+          <h3>فعل ماضی</h3>
+          <p>گذشته — ۱۴ صیغه</p>
+          <div class="review-example">كَتَبَ ← نوشت</div>
+        </div>
+
+        <div class="review-card review-2">
+          <div class="review-icon">2️⃣</div>
+          <h3>فعل مضارع</h3>
+          <p>حال و آینده — ۱۴ صیغه</p>
+          <div class="review-example">يَكتُبُ ← می‌نویسد</div>
+        </div>
+
+        <div class="review-card review-3">
+          <div class="review-icon">3️⃣</div>
+          <h3>فعل معتل</h3>
+          <p>مثال، اجوف، ناقص</p>
+          <div class="review-example">قالَ، باعَ، دَعا</div>
+        </div>
+
+        <div class="review-card review-4">
+          <div class="review-icon">4️⃣</div>
+          <h3>امر و نهی</h3>
+          <p>دستور و منع</p>
+          <div class="review-example">اُكتُبْ / لا تَكتُبْ</div>
+        </div>
+
+        <div class="review-card review-5">
+          <div class="review-icon">5️⃣</div>
+          <h3>اسم فاعل و مفعول</h3>
+          <p>انجام‌دهنده / انجام‌شده</p>
+          <div class="review-example">كاتِب / مَكتوب</div>
+        </div>
+
+        <div class="review-card review-6">
+          <div class="review-icon">6️⃣</div>
+          <h3>ترجمه</h3>
+          <p>کلمه‌ای → روان</p>
+          <div class="review-example">ذهَبَ ← رفت</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: جدول‌ها -->
+  <section class="lesson-section" data-section="rules">
+
+    <!-- جدول شناسه‌های ماضی -->
+    <div class="card">
+      <h2>🎓 شناسه‌های ماضی و مضارع</h2>
+      <p class="rule-text">۱۴ صیغه برای هر دو زمان</p>
+
+      <div class="table-wrapper">
+        <table class="conj-table">
+          <thead>
+            <tr>
+              <th>ضمیر</th>
+              <th>ماضی</th>
+              <th>مضارع</th>
+              <th>معنی</th>
+            </tr>
+          </thead>
+          <tbody id="conjSummaryTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- جدول اسم فاعل و مفعول -->
+    <div class="card">
+      <h2>🎓 اسم فاعل و مفعول</h2>
+      <p class="rule-text">ثلاثی مجرد — قالب فاعِل / مَفعول</p>
+
+      <div class="table-wrapper">
+        <table class="conj-table">
+          <thead>
+            <tr>
+              <th>فعل</th>
+              <th>اسم فاعل</th>
+              <th>اسم مفعول</th>
+              <th>معنی</th>
+            </tr>
+          </thead>
+          <tbody id="nounSummaryTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- جدول امر و نهی -->
+    <div class="card">
+      <h2>🎓 امر و نهی</h2>
+      <p class="rule-text">از فعل مضارع مخاطب</p>
+
+      <div class="table-wrapper">
+        <table class="conj-table">
+          <thead>
+            <tr>
+              <th>ضمیر</th>
+              <th>مضارع</th>
+              <th>امر</th>
+              <th>نهی</th>
+            </tr>
+          </thead>
+          <tbody id="amrSummaryTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: مقایسه -->
+  <section class="lesson-section" data-section="compare">
+
+    <div class="card">
+      <h2>📊 مقایسه انواع فعل</h2>
+
+      <div class="compare-table-wrapper">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>نوع فعل</th>
+              <th>ویژگی</th>
+              <th>مثال</th>
+              <th>نکته</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="type-cell type-madi">🔵 ماضی</td>
+              <td>گذشته</td>
+              <td class="arabic">كَتَبَ</td>
+              <td>شناسه‌های ماضی</td>
+            </tr>
+            <tr>
+              <td class="type-cell type-mozare">🟢 مضارع</td>
+              <td>حال/آینده</td>
+              <td class="arabic">يَكتُبُ</td>
+              <td>حرف مضارعه دارد</td>
+            </tr>
+            <tr>
+              <td class="type-cell type-amr">🟠 امر</td>
+              <td>دستور</td>
+              <td class="arabic">اُكتُبْ</td>
+              <td>حرف مضارعه ندارد</td>
+            </tr>
+            <tr>
+              <td class="type-cell type-nahi">🔴 نهی</td>
+              <td>منع</td>
+              <td class="arabic">لا تَكتُبْ</td>
+              <td>لا + مضارع مجزوم</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 مقایسه انواع فعل معتل</h2>
+
+      <div class="compare-table-wrapper">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>نوع</th>
+              <th>حرف معتل</th>
+              <th>مثال</th>
+              <th>مضارع</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="type-cell type-mithal">🔵 مثال</td>
+              <td>حرف اول</td>
+              <td class="arabic">وَعَدَ</td>
+              <td class="arabic">يَعِدُ</td>
+            </tr>
+            <tr>
+              <td class="type-cell type-ajwaf">🟢 اجوف</td>
+              <td>حرف دوم</td>
+              <td class="arabic">قَالَ</td>
+              <td class="arabic">يَقُولُ</td>
+            </tr>
+            <tr>
+              <td class="type-cell type-naqes">🟠 ناقص</td>
+              <td>حرف سوم</td>
+              <td class="arabic">دَعَا</td>
+              <td class="arabic">يَدْعُو</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 مقایسه ثلاثی مجرد و مزید</h2>
+
+      <div class="compare-table-wrapper">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>نوع</th>
+              <th>تعداد حروف اصلی</th>
+              <th>مثال</th>
+              <th>اسم فاعل</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="type-cell type-mithal">🔵 ثلاثی مجرد</td>
+              <td>۳ حرف</td>
+              <td class="arabic">كَتَبَ</td>
+              <td class="arabic">كاتِب</td>
+            </tr>
+            <tr>
+              <td class="type-cell type-ajwaf">🟢 ثلاثی مزید</td>
+              <td>بیشتر از ۳</td>
+              <td class="arabic">أَرسَلَ</td>
+              <td class="arabic">مُرسِل</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۴: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین ترکیبی</h2>
+      <p class="card-hint">سؤال‌های تصادفی از همه درس‌ها</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۵: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون جامع (۲۰ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۶: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: چالش ترکیبی!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — عربی نهم — درس ۶</p>
+  </footer>
+
+  <script src="arabic-lesson6.js"></script>
+  <script src="../voice.js"></script>
+</body>
+</html>

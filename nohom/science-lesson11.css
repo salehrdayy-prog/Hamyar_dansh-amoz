@@ -1,0 +1,205 @@
+/* ==========================================
+   فصل ۱۱ علوم — گوناگونی جانداران
+========================================== */
+
+@import url('science-lesson1.css');
+
+/* ==========================================
+   مراحل طبقه‌بندی
+========================================== */
+.hierarchy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.hierarchy-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border-right: 5px solid;
+  transition: all 0.3s;
+}
+
+.hierarchy-item:active {
+  transform: scale(0.98);
+}
+
+.level-1 {
+  background: linear-gradient(135deg, #ffebee, #ffcdd2);
+  border-right-color: #f44336;
+}
+.level-2 {
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  border-right-color: #e91e63;
+}
+.level-3 {
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+  border-right-color: #9c27b0;
+}
+.level-4 {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-right-color: #2196f3;
+}
+.level-5 {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  border-right-color: #00bcd4;
+}
+.level-6 {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  border-right-color: #4caf50;
+}
+.level-7 {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-right-color: #ff9800;
+}
+
+.level-num {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 900;
+  color: #333;
+  flex-shrink: 0;
+  font-family: 'Vazirmatn', sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.level-content {
+  flex: 1;
+  text-align: right;
+}
+
+.level-title {
+  font-size: 1em;
+  font-weight: 900;
+  color: #2c3e50;
+  margin-bottom: 3px;
+}
+
+.level-desc {
+  font-size: 0.82em;
+  color: #666;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   نام علمی
+========================================== */
+.scientific-names {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.name-card {
+  padding: 14px 12px;
+  background: white;
+  border: 2px solid #e0f2f1;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.name-card:active {
+  transform: scale(0.97);
+  border-color: #009688;
+}
+
+.name-icon {
+  font-size: 2em;
+  margin-bottom: 6px;
+}
+
+.name-scientific {
+  font-family: 'Georgia', serif;
+  font-size: 1em;
+  font-weight: 700;
+  color: #00695c;
+  direction: ltr;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+.name-persian {
+  font-size: 0.85em;
+  color: #666;
+  font-weight: 600;
+}
+
+/* ==========================================
+   لیست سلسله‌ها
+========================================== */
+.props-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.prop-card {
+  padding: 16px;
+  background: white;
+  border: 2px solid #e0f2f1;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.prop-card:active {
+  transform: scale(0.97);
+  border-color: #009688;
+}
+
+.prop-icon {
+  font-size: 2em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.prop-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.prop-desc {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .level-num {
+    width: 30px;
+    height: 30px;
+    font-size: 0.85em;
+  }
+  .level-title { font-size: 0.9em; }
+  .level-desc { font-size: 0.75em; }
+  .name-scientific { font-size: 0.9em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .scientific-names {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .props-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

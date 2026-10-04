@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff9800">
+  <title>Lesson 1: Saving Nature — انگلیسی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="english-style.css">
+  <link rel="stylesheet" href="english-lesson1.css">
+</head>
+<body>
+
+  <header class="app-header english-header">
+    <a href="english.html" class="back-btn">→</a>
+    <h1>🌍 Lesson 1</h1>
+    <p class="subtitle">Saving Nature</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 Reading</button>
+    <button class="lesson-tab" data-tab="vocab">🔤 Words</button>
+    <button class="lesson-tab" data-tab="grammar">🎓 Grammar</button>
+    <button class="lesson-tab" data-tab="practice">✏️ Practice</button>
+    <button class="lesson-tab" data-tab="quiz">📝 Quiz</button>
+    <button class="lesson-tab" data-tab="game">🎮 Game</button>
+  </nav>
+
+  <!-- تب ۱: Reading -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>🌍 درباره این درس</h2>
+      <p class="card-hint">
+        در این درس با کلمات و اصطلاحات مربوط به <b>طبیعت و محیط زیست</b> آشنا می‌شوی.
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">🌳</div>
+          <h3>Nature</h3>
+          <p>طبیعت</p>
+          <div class="motel-example">tree · forest · river</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">♻️</div>
+          <h3>Protect</h3>
+          <p>محافظت کردن</p>
+          <div class="motel-example">save · protect · clean</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">🌎</div>
+          <h3>Environment</h3>
+          <p>محیط زیست</p>
+          <div class="motel-example">pollution · waste · recycle</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📖 Reading — متن درس</h2>
+      <p class="card-hint">روی هر جمله بزن تا تلفظش رو بشنوی</p>
+
+      <div class="english-text-box">
+        <p class="en-sentence">Nature is beautiful. We must protect it.</p>
+        <p class="en-sentence">There are many trees, rivers, and animals in nature.</p>
+        <p class="en-sentence">We should not cut trees. We should not throw waste in rivers.</p>
+        <p class="en-sentence">We should plant trees and save water.</p>
+        <p class="en-sentence">If we don't save nature, our children will not have a good life.</p>
+      </div>
+
+      <h3 class="sub-title">🇮🇷 ترجمه فارسی</h3>
+      <div class="translation-box">
+        <p>طبیعت زیباست. ما باید از آن محافظت کنیم.</p>
+        <p>درختان، رودها و حیوانات زیادی در طبیعت وجود دارند.</p>
+        <p>ما نباید درختان را قطع کنیم. نباید زباله در رودها بیندازیم.</p>
+        <p>ما باید درخت بکاریم و در آب صرفه‌جویی کنیم.</p>
+        <p>اگر طبیعت را حفظ نکنیم، فرزندانمان زندگی خوبی نخواهند داشت.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💡 نکات مهم متن</h2>
+
+      <div class="tip-box">
+        <strong>📌 There is / There are</strong>
+        <p><b>There is</b> + اسم مفرد → There is a tree.</p>
+        <p><b>There are</b> + اسم جمع → There are trees.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 If clause (جمله شرطی)</strong>
+        <p>If + حال ساده , آینده ساده</p>
+        <p>If we don't save nature, our children will not have a good life.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 ضمایر مفعولی</strong>
+        <p>it (آن) / them (آن‌ها) / us (ما را) / our (مالِ ما)</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: Words -->
+  <section class="lesson-section" data-section="vocab">
+    <div class="card">
+      <h2>🔤 واژگان درس ۱</h2>
+      <p class="card-hint">روی 🔊 هر کارت بزن تا تلفظ صحیح رو بشنوی</p>
+
+      <div class="vocab-grid" id="vocabGrid"></div>
+    </div>
+  </section>
+
+  <!-- تب ۳: Grammar -->
+  <section class="lesson-section" data-section="grammar">
+
+    <div class="card">
+      <h2>🎓 گرامر: must / should</h2>
+
+      <div class="rule-box">
+        <h3>📌 must = باید (قوی‌تر)</h3>
+        <p class="rule-desc">برای اجبار و کارهای ضروری استفاده می‌شود.</p>
+        <div class="grammar-example">
+          <div class="en-sentence">We must protect nature.</div>
+          <div class="fa-sentence">ما باید از طبیعت محافظت کنیم.</div>
+        </div>
+        <div class="grammar-example">
+          <div class="en-sentence">We must save water.</div>
+          <div class="fa-sentence">ما باید آب را ذخیره کنیم.</div>
+        </div>
+      </div>
+
+      <div class="rule-box">
+        <h3>📌 should = بهتر است / باید (ملایم‌تر)</h3>
+        <p class="rule-desc">برای توصیه و پیشنهاد استفاده می‌شود.</p>
+        <div class="grammar-example">
+          <div class="en-sentence">We should plant trees.</div>
+          <div class="fa-sentence">بهتر است درخت بکاریم.</div>
+        </div>
+        <div class="grammar-example">
+          <div class="en-sentence">We should help animals.</div>
+          <div class="fa-sentence">بهتر است به حیوانات کمک کنیم.</div>
+        </div>
+      </div>
+
+      <div class="rule-box">
+        <h3>📌 must not = نباید</h3>
+        <p class="rule-desc">برای منع و ممنوعیت.</p>
+        <div class="grammar-example">
+          <div class="en-sentence">We must not cut trees.</div>
+          <div class="fa-sentence">ما نباید درختان را قطع کنیم.</div>
+        </div>
+        <div class="grammar-example">
+          <div class="en-sentence">You must not smoke.</div>
+          <div class="fa-sentence">تو نباید سیگار بکشی.</div>
+        </div>
+      </div>
+
+      <div class="rule-box">
+        <h3>📌 should not = بهتر است نکنیم</h3>
+        <p class="rule-desc">برای توصیه منفی.</p>
+        <div class="grammar-example">
+          <div class="en-sentence">We should not throw waste.</div>
+          <div class="fa-sentence">بهتر است زباله نیندازیم.</div>
+        </div>
+        <div class="grammar-example">
+          <div class="en-sentence">You should not lie.</div>
+          <div class="fa-sentence">بهتر است دروغ نگویی.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 جدول خلاصه</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>فارسی</th>
+            <th>انگلیسی</th>
+            <th>مثال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="meaning-cell">باید (ضروری)</td>
+            <td class="arabic">must</td>
+            <td class="meaning-cell">We must help.</td>
+          </tr>
+          <tr>
+            <td class="meaning-cell">بهتر است</td>
+            <td class="arabic">should</td>
+            <td class="meaning-cell">We should go.</td>
+          </tr>
+          <tr>
+            <td class="meaning-cell">نباید</td>
+            <td class="arabic">must not</td>
+            <td class="meaning-cell">You must not smoke.</td>
+          </tr>
+          <tr>
+            <td class="meaning-cell">بهتر است نکنیم</td>
+            <td class="arabic">should not</td>
+            <td class="meaning-cell">You should not lie.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- تب ۴: Practice -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">پاسخ درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۵: Quiz -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۶: Game -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: ترجمه سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — انگلیسی نهم — Lesson 1</p>
+  </footer>
+
+  <script src="english-lesson1.js"></script>
+  <script src="../voice.js"></script>
+</body>
+</html>

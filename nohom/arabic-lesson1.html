@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4caf50">
+  <title>درس ۱: فعل ماضی و مضارع — عربی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="arabic-style.css">
+  <link rel="stylesheet" href="arabic-lesson1.css">
+</head>
+<body>
+
+  <!-- هدر -->
+  <header class="app-header arabic-header">
+    <a href="arabic.html" class="back-btn">→</a>
+    <h1>📖 درس ۱</h1>
+    <p class="subtitle">فعل ماضی و مضارع</p>
+  </header>
+
+  <!-- منوی تب‌ها -->
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="rules">🎓 روش ساخت</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+    <button class="lesson-tab" data-tab="exam">🎯 امتحان</button>
+  </nav>
+
+  <!-- ============================================
+       تب ۱: آموزش
+  ============================================= -->
+  <section class="lesson-section active" data-section="learn">
+    <div class="card">
+      <h2>📖 انتخاب فعل</h2>
+      <p class="card-hint">روی هر فعل بزن تا صرفش رو ببینی</p>
+      <div class="verbs-grid" id="verbsGrid"></div>
+    </div>
+
+    <div class="card" id="conjugationCard" style="display:none;">
+      <h2 id="verbTitle"></h2>
+      <div class="tabs">
+        <button class="tab active" data-tense="madi">ماضی (گذشته)</button>
+        <button class="tab" data-tense="mozare">مضارع (حال/آینده)</button>
+      </div>
+      <div id="conjugationTable"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       تب ۲: روش ساخت
+  ============================================= -->
+  <section class="lesson-section" data-section="rules">
+    <div class="card">
+      <h2>🎓 روش ساخت فعل ماضی</h2>
+      <p class="rule-text">ریشه فعل + شناسه‌های ماضی</p>
+
+      <div class="rule-box">
+        <h3>📌 جدول شناسه‌های ماضی (۱۴ صیغه):</h3>
+        <div class="table-wrapper">
+          <table class="conj-table">
+            <thead>
+              <tr>
+                <th>#</th><th>ضمیر</th><th>شناسه</th><th>مثال</th><th>معنی</th>
+              </tr>
+            </thead>
+            <tbody id="madiRulesTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🎓 روش ساخت فعل مضارع</h2>
+      <p class="rule-text">حرف مضارعه (أ، ت، ی، ن) + ریشه + شناسه</p>
+
+      <div class="rule-box">
+        <h3>📌 حروف مضارعه:</h3>
+        <div class="letters-grid">
+          <div class="letter-card">
+            <span class="arabic-big">أ</span>
+            <strong>أَنَا</strong>
+            <span class="letter-meaning">من می‌نویسم</span>
+          </div>
+          <div class="letter-card">
+            <span class="arabic-big">ت</span>
+            <strong>أَنْتَ، أَنْتِ، هِيَ</strong>
+            <span class="letter-meaning">تو / او</span>
+          </div>
+          <div class="letter-card">
+            <span class="arabic-big">ی</span>
+            <strong>هُوَ، هُمْ، هُنَّ</strong>
+            <span class="letter-meaning">او / آن‌ها</span>
+          </div>
+          <div class="letter-card">
+            <span class="arabic-big">ن</span>
+            <strong>نَحْنُ</strong>
+            <span class="letter-meaning">ما می‌نویسیم</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rule-box">
+        <h3>📌 جدول شناسه‌های مضارع (۱۴ صیغه):</h3>
+        <div class="table-wrapper">
+          <table class="conj-table">
+            <thead>
+              <tr>
+                <th>#</th><th>ضمیر</th><th>شناسه</th><th>مثال</th><th>معنی</th>
+              </tr>
+            </thead>
+            <tbody id="mozareRulesTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       تب ۳: تمرین
+  ============================================= -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">صیغه درست رو انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       تب ۴: آزمون
+  ============================================= -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون نهایی (۲۰ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- ============================================
+       تب ۵: بازی
+  ============================================= -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: ترجمه سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <!-- ============================================
+       تب ۶: امتحان تعاملی
+  ============================================= -->
+  <section class="lesson-section" data-section="exam">
+    <div class="card">
+      <h2>🎯 امتحان کن:</h2>
+      <p class="card-hint">روی هر ضمیر بزن تا شکل فعل را ببینی</p>
+
+      <div class="exam-controls">
+        <div class="control-group">
+          <label>فعل:</label>
+          <select id="examVerbSelect"></select>
+        </div>
+        <div class="control-group">
+          <label>زمان:</label>
+          <div class="exam-tabs">
+            <button class="exam-tab active" data-tense="madi">ماضی</button>
+            <button class="exam-tab" data-tense="mozare">مضارع</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pronoun-grid" id="pronounGrid"></div>
+
+      <div class="exam-result" id="examResult">
+        <p class="exam-result-label">فعل برای ضمیر انتخاب‌شده</p>
+        <p class="exam-result-verb" id="examVerbDisplay">—</p>
+        <p class="exam-result-meaning" id="examMeaningDisplay"></p>
+        <p class="exam-result-hint" id="examHintDisplay">یک ضمیر انتخاب کن</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — عربی نهم — درس ۱</p>
+  </footer>
+
+  <script src="arabic-lesson1.js"></script>
+  <script src="voice.js"></script>
+</body>
+</html>

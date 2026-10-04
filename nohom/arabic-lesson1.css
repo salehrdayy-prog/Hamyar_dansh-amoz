@@ -1,0 +1,626 @@
+/* ==========================================
+   استایل درس ۱ عربی نهم
+========================================== */
+
+/* ==========================================
+   تب‌های درس
+========================================== */
+.lesson-tabs {
+  display: flex;
+  gap: 6px;
+  padding: 0 12px 14px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.lesson-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.lesson-tab {
+  padding: 10px 16px;
+  border: 2px solid transparent;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #666;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.lesson-tab.active {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.lesson-tab:active {
+  transform: scale(0.95);
+}
+
+/* ==========================================
+   بخش‌های درس
+========================================== */
+.lesson-section {
+  display: none;
+  padding: 0 18px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.lesson-section.active {
+  display: block;
+  animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================
+   کارت
+========================================== */
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 22px 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  color: #2e7d32;
+  font-size: 1.25em;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.card-hint {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 16px;
+}
+
+/* ==========================================
+   دکمه‌های افعال
+========================================== */
+.verbs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.verb-btn {
+  padding: 16px 10px;
+  border: 2px solid #4caf50;
+  background: white;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: 'Amiri', 'Vazirmatn', serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #2e7d32;
+  transition: all 0.3s;
+  line-height: 1.3;
+}
+
+.verb-btn:active,
+.verb-btn.active {
+  background: #4caf50;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(76, 175, 80, 0.3);
+}
+
+.verb-btn .meaning {
+  display: block;
+  font-family: 'Vazirmatn', sans-serif;
+  font-size: 0.5em;
+  font-weight: 500;
+  margin-top: 6px;
+  opacity: 0.85;
+}
+
+/* ==========================================
+   تب‌های ماضی/مضارع
+========================================== */
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #e8f5e9;
+}
+
+.tab {
+  padding: 10px 18px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.95em;
+  font-weight: 700;
+  color: #999;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+  margin-bottom: -2px;
+}
+
+.tab.active {
+  color: #2e7d32;
+  border-bottom-color: #4caf50;
+}
+
+/* ==========================================
+   جدول‌ها
+========================================== */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+}
+
+.conj-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.conj-table th,
+.conj-table td {
+  padding: 10px 8px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+
+.conj-table th {
+  background: #f1f8f4;
+  color: #2e7d32;
+  font-weight: 900;
+  font-size: 0.9em;
+  padding: 12px 8px;
+}
+
+.conj-table tr:hover td {
+  background: #f9fdfa;
+}
+
+.conj-table .arabic {
+  font-family: 'Amiri', serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #2c3e50;
+  direction: rtl;
+}
+
+.conj-table .pronoun {
+  font-family: 'Amiri', serif;
+  color: #4caf50;
+  font-weight: 700;
+  font-size: 1.15em;
+}
+
+.conj-table .meaning-cell {
+  color: #666;
+  font-size: 0.85em;
+  font-weight: 500;
+  text-align: right;
+}
+
+.conj-table td:first-child {
+  color: #aaa;
+  width: 30px;
+  font-size: 0.85em;
+  font-weight: 700;
+}
+
+/* ==========================================
+   بخش روش ساخت
+========================================== */
+.rule-text {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  font-weight: 700;
+  color: #2e7d32;
+  text-align: center;
+  font-size: 0.95em;
+}
+
+.rule-box {
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.rule-box h3 {
+  color: #4caf50;
+  margin-bottom: 12px;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.letters-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.letter-card {
+  background: white;
+  padding: 14px 10px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #e8f5e9;
+}
+
+.letter-card .arabic-big {
+  font-family: 'Amiri', serif;
+  font-size: 2.5em;
+  color: #2e7d32;
+  display: block;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.letter-card strong {
+  display: block;
+  margin: 6px 0 4px;
+  color: #4caf50;
+  font-size: 0.9em;
+  font-family: 'Amiri', 'Vazirmatn', serif;
+}
+
+.letter-meaning {
+  display: block;
+  font-size: 0.78em;
+  color: #777;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* ==========================================
+   سؤال‌ها
+========================================== */
+.question-box {
+  font-size: 1.05em;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding: 16px;
+  background: linear-gradient(135deg, #f1f8f4, #e8f5e9);
+  border-radius: 12px;
+  text-align: center;
+  color: #333;
+  line-height: 1.8;
+  border-right: 4px solid #4caf50;
+}
+
+.arabic-big {
+  font-family: 'Amiri', serif;
+  font-size: 1.8em;
+  color: #2e7d32;
+  display: inline-block;
+  margin: 6px 0;
+  font-weight: 700;
+  direction: rtl;
+}
+
+/* ==========================================
+   گزینه‌ها
+========================================== */
+.options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.option-btn {
+  padding: 14px 12px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: 'Amiri', 'Vazirmatn', sans-serif;
+  font-size: 1.15em;
+  font-weight: 700;
+  transition: all 0.3s;
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+.option-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.option-btn.correct {
+  background: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.option-btn.wrong {
+  background: #f44336;
+  color: white;
+  border-color: #f44336;
+}
+
+.option-btn:disabled {
+  cursor: not-allowed;
+}
+
+/* ==========================================
+   دکمه اصلی
+========================================== */
+.btn-primary {
+  background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.05em;
+  font-weight: 700;
+  transition: all 0.3s;
+  margin: 8px 0;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* ==========================================
+   امتیاز
+========================================== */
+.score-box {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #2e7d32;
+  background: #f1f8f4;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+/* ==========================================
+   بازی
+========================================== */
+.game-info {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 900;
+  color: #2e7d32;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f1f8f4;
+  border-radius: 12px;
+}
+
+#timer {
+  color: #f44336;
+  font-size: 1.15em;
+}
+
+/* ==========================================
+   امتحان تعاملی
+========================================== */
+.exam-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 12px;
+  background: #f1f8f4;
+  border-radius: 12px;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.control-group label {
+  font-weight: 700;
+  color: #2e7d32;
+  font-size: 0.95em;
+}
+
+#examVerbSelect {
+  padding: 8px 14px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  font-family: 'Amiri', 'Vazirmatn', serif;
+  font-size: 1.05em;
+  font-weight: 700;
+  color: #2e7d32;
+  background: white;
+  cursor: pointer;
+}
+
+.exam-tabs {
+  display: flex;
+  gap: 4px;
+  background: white;
+  border-radius: 10px;
+  padding: 3px;
+  border: 2px solid #4caf50;
+}
+
+.exam-tab {
+  padding: 7px 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #4caf50;
+  border-radius: 7px;
+  transition: all 0.3s;
+}
+
+.exam-tab.active {
+  background: #4caf50;
+  color: white;
+}
+
+.pronoun-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.pronoun-btn {
+  padding: 14px 6px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: 'Amiri', serif;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #2e7d32;
+  transition: all 0.3s;
+  line-height: 1.3;
+}
+
+.pronoun-btn:active,
+.pronoun-btn.active {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+  border-color: #2e7d32;
+  transform: translateY(-2px);
+}
+
+.exam-result {
+  border: 3px dashed #4caf50;
+  border-radius: 16px;
+  padding: 24px 16px;
+  text-align: center;
+  background: linear-gradient(135deg, #f9fdfa, #f1f8f4);
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.exam-result.filled {
+  border-style: solid;
+  border-color: #2e7d32;
+}
+
+.exam-result-label {
+  color: #2e7d32;
+  font-weight: 700;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
+.exam-result-verb {
+  font-family: 'Amiri', serif;
+  font-size: 2.3em;
+  font-weight: 700;
+  color: #2c3e50;
+  direction: rtl;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.exam-result-verb.show {
+  animation: popIn 0.4s ease;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.exam-result-meaning {
+  font-size: 1.05em;
+  color: #4caf50;
+  font-weight: 700;
+  margin-bottom: 8px;
+  min-height: 22px;
+}
+
+.exam-result-hint {
+  color: #999;
+  font-size: 0.88em;
+  font-weight: 500;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .verbs-grid {
+    grid-template-columns: 1fr;
+  }
+  .pronoun-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .verbs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pronoun-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .letters-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ==========================================
+   دکمه‌های صوتی
+========================================== */
+.speak-btn {
+  user-select: none;
+  font-family: inherit;
+  flex-shrink: 0;
+}
+
+.speak-btn:hover {
+  background: rgba(118, 75, 162, 0.25) !important;
+}
+
+.speak-btn:active {
+  transform: scale(0.9) !important;
+}
+
+.conj-table td.arabic,
+.conj-table td.pronoun {
+  position: relative;
+}
+
+.letter-card .arabic-big {
+  position: relative;
+}

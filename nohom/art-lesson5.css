@@ -1,0 +1,108 @@
+/* ==========================================
+   درس ۵ نقاشی — طراحی اشیا
+========================================== */
+
+@import url('art-lesson1.css');
+
+/* ==========================================
+   شبکه اشیا
+========================================== */
+.objects-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.object-card {
+  padding: 18px 16px;
+  background: white;
+  border: 2px solid #fce4ec;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.object-card:active {
+  transform: scale(0.97);
+  border-color: #e91e63;
+}
+
+.object-visual {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.object-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #ad1457;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.object-desc {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* ==========================================
+   سایه‌زنی
+========================================== */
+.shade-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.shade-card {
+  padding: 18px 16px;
+  background: white;
+  border: 2px solid #fce4ec;
+  border-radius: 14px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.shade-card:active {
+  transform: scale(0.97);
+  border-color: #e91e63;
+}
+
+.shade-icon {
+  font-size: 2.2em;
+  margin-bottom: 8px;
+}
+
+.shade-card h3 {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #ad1457;
+  margin-bottom: 6px;
+}
+
+.shade-card p {
+  font-size: 0.88em;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .object-visual { font-size: 2.5em; }
+  .shade-icon { font-size: 1.8em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .objects-list { grid-template-columns: repeat(2, 1fr); }
+  .shade-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 800px) {
+  .shade-grid { grid-template-columns: repeat(3, 1fr); }
+}

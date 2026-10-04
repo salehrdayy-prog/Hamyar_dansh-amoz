@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3f51b5">
+  <title>فصل ۵: عبارت‌های جبری — ریاضی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="math-style.css">
+  <link rel="stylesheet" href="math-lesson1.css">
+  <link rel="stylesheet" href="math-lesson5.css">
+</head>
+<body>
+
+  <header class="app-header math-header">
+    <a href="math.html" class="back-btn">→</a>
+    <h1>🔢 فصل ۵</h1>
+    <p class="subtitle">عبارت‌های جبری</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="identity">🎯 اتحادها</button>
+    <button class="lesson-tab" data-tab="factorize">🔧 تجزیه</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: آموزش -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>🧮 عبارت جبری چیست؟</h2>
+      <p class="card-hint">
+        ترکیبی از <b>عدد</b>، <b>متغیر</b> و <b>عملگرها</b>. مثل: 2x + 3 یا x² − 4
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">🔤</div>
+          <h3>متغیر</h3>
+          <p>حرف به‌جای عدد</p>
+          <div class="motel-example">x · y · a</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">#️⃣</div>
+          <h3>ضریب</h3>
+          <p>عدد کنار متغیر</p>
+          <div class="motel-example">۲ در 2x</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">📊</div>
+          <h3>درجه</h3>
+          <p>بزرگ‌ترین توان</p>
+          <div class="motel-example">۲ در x²</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📖 اصطلاحات جبری</h2>
+
+      <div class="tip-box">
+        <strong>📌 جمله جبری</strong>
+        <p>هر بخش جدا از عبارت — با + یا − جدا می‌شود.</p>
+        <p>در 3x² + 2x − 5 سه جمله داریم: 3x²، 2x، −5</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 جملات متشابه</strong>
+        <p>جملاتی که متغیر و توان یکسان دارند.</p>
+        <p>3x و 5x متشابه‌اند → 3x + 5x = 8x</p>
+        <p>3x و 5x² متشابه نیستند.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 درجه چندجمله‌ای</strong>
+        <p>بزرگ‌ترین توان متغیر در عبارت.</p>
+        <p>در 3x³ + 2x − 1 درجه = ۳</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 ساده کردن</strong>
+        <p>فقط جملات متشابه را می‌توان جمع/تفریق کرد.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💡 ضرب و تقسیم جبری</h2>
+
+      <div class="tip-box">
+        <strong>📌 ضرب تک‌جمله‌ای</strong>
+        <p>3x × 4x = 12x²</p>
+        <p>2x² × 5x³ = 10x⁵</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 ضرب چندجمله‌ای</strong>
+        <p>2x(x + 3) = 2x² + 6x</p>
+        <p>(x+1)(x+2) = x² + 3x + 2</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 تقسیم</strong>
+        <p>6x³ ÷ 2x = 3x²</p>
+        <p>10x⁵ ÷ 5x² = 2x³</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: اتحادها -->
+  <section class="lesson-section" data-section="identity">
+
+    <div class="card">
+      <h2>🎯 اتحادهای مهم</h2>
+      <p class="card-hint">اتحادها فرمول‌های میان‌بر برای ضرب عبارات‌اند.</p>
+
+      <div class="identity-grid">
+
+        <div class="identity-card identity-1">
+          <div class="identity-icon">1️⃣</div>
+          <h3>اتحاد مربع دو جمله‌ای (جمع)</h3>
+          <div class="identity-formula">
+            (a + b)² = a² + 2ab + b²
+          </div>
+          <div class="identity-example">
+            (x + 3)² = x² + 6x + 9
+          </div>
+        </div>
+
+        <div class="identity-card identity-2">
+          <div class="identity-icon">2️⃣</div>
+          <h3>اتحاد مربع دو جمله‌ای (تفریق)</h3>
+          <div class="identity-formula">
+            (a − b)² = a² − 2ab + b²
+          </div>
+          <div class="identity-example">
+            (x − 3)² = x² − 6x + 9
+          </div>
+        </div>
+
+        <div class="identity-card identity-3">
+          <div class="identity-icon">3️⃣</div>
+          <h3>اتحاد مزدوج</h3>
+          <div class="identity-formula">
+            (a + b)(a − b) = a² − b²
+          </div>
+          <div class="identity-example">
+            (x + 3)(x − 3) = x² − 9
+          </div>
+        </div>
+
+        <div class="identity-card identity-4">
+          <div class="identity-icon">4️⃣</div>
+          <h3>اتحاد مربع سه‌جمله‌ای</h3>
+          <div class="identity-formula">
+            (a + b + c)² = a² + b² + c² + 2ab + 2ac + 2bc
+          </div>
+          <div class="identity-example">
+            (x + y + z)²
+          </div>
+        </div>
+
+        <div class="identity-card identity-5">
+          <div class="identity-icon">5️⃣</div>
+          <h3>اتحاد مکعب (جمع)</h3>
+          <div class="identity-formula">
+            (a + b)³ = a³ + 3a²b + 3ab² + b³
+          </div>
+          <div class="identity-example">
+            (x + 1)³ = x³ + 3x² + 3x + 1
+          </div>
+        </div>
+
+        <div class="identity-card identity-6">
+          <div class="identity-icon">6️⃣</div>
+          <h3>اتحاد مکعب (تفریق)</h3>
+          <div class="identity-formula">
+            (a − b)³ = a³ − 3a²b + 3ab² − b³
+          </div>
+          <div class="identity-example">
+            (x − 1)³ = x³ − 3x² + 3x − 1
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: تجزیه -->
+  <section class="lesson-section" data-section="factorize">
+
+    <div class="card">
+      <h2>🔧 تجزیه (فاکتورگیری)</h2>
+      <p class="card-hint">روی هر روش بزن تا اطلاعات کامل را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="common">🔢 فاکتور مشترک</button>
+        <button class="motel-tab" data-type="grouping">📦 دسته‌بندی</button>
+        <button class="motel-tab" data-type="identity">🎯 با اتحاد</button>
+      </div>
+
+      <div id="factorizeList" class="props-list"></div>
+    </div>
+
+  </section>
+
+  <!-- تب ۴: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">پاسخ درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۵: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۶: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: تشخیص سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — ریاضی نهم — فصل ۵</p>
+  </footer>
+
+  <script src="math-lesson5.js"></script>
+</body>
+</html>

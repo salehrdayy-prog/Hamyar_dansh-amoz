@@ -1,0 +1,153 @@
+/* ==========================================
+   فصل ۳ علوم — به دنبال محیط فعال
+========================================== */
+
+@import url('science-lesson1.css');
+
+/* ==========================================
+   کارت‌های مقایسه (اسید / باز)
+========================================== */
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.compare-card {
+  padding: 20px 18px;
+  border-radius: 16px;
+  border: 2px solid;
+}
+
+.compare-card.acid-card {
+  background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+  border-color: #f44336;
+}
+
+.compare-card.base-card {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-color: #2196f3;
+}
+
+.compare-icon {
+  font-size: 2.5em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.compare-card h3 {
+  font-size: 1.2em;
+  font-weight: 900;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.acid-card h3 { color: #c62828; }
+.base-card h3 { color: #1565c0; }
+
+.compare-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.compare-card li {
+  padding: 8px 12px;
+  margin: 6px 0;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  font-size: 0.9em;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.6;
+  border-right: 3px solid;
+}
+
+.acid-card li { border-right-color: #f44336; }
+.base-card li { border-right-color: #2196f3; }
+
+/* ==========================================
+   کارت‌های واکنش
+========================================== */
+.reaction-card {
+  padding: 20px 18px;
+  background: white;
+  border: 2px solid #e0f2f1;
+  border-radius: 16px;
+  margin-bottom: 14px;
+  transition: all 0.3s;
+}
+
+.reaction-card:active {
+  transform: scale(0.98);
+  border-color: #009688;
+}
+
+.reaction-icon {
+  font-size: 2em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.reaction-card h3 {
+  font-size: 1.15em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.reaction-desc {
+  font-size: 0.95em;
+  color: #666;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.reaction-example {
+  background: linear-gradient(135deg, #f5fffe, #e0f2f1);
+  padding: 14px;
+  border-radius: 12px;
+  border-right: 4px solid #009688;
+}
+
+.equation {
+  font-family: 'Georgia', 'Courier New', monospace;
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #00695c;
+  direction: ltr;
+  text-align: center;
+  padding: 8px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.equation-desc {
+  font-size: 0.85em;
+  color: #666;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .compare-icon { font-size: 2em; }
+  .compare-card h3 { font-size: 1.05em; }
+  .equation { font-size: 0.9em; padding: 6px; }
+  .reaction-icon { font-size: 1.8em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .compare-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,200 @@
+/* ==========================================
+   فصل ۴ علوم — حرکت چیست؟
+========================================== */
+
+@import url('science-lesson1.css');
+
+/* ==========================================
+   فرمول سرعت
+========================================== */
+.formula-box {
+  background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
+  padding: 20px 16px;
+  border-radius: 16px;
+  border: 2px solid #009688;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.formula-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 16px;
+}
+
+.formula {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.fraction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Georgia', serif;
+}
+
+.numerator {
+  border-bottom: 3px solid #00695c;
+  padding: 4px 16px;
+  font-size: 1em;
+  font-weight: 900;
+  color: #00695c;
+  padding-bottom: 6px;
+}
+
+.denominator {
+  padding: 6px 16px;
+  font-size: 1em;
+  font-weight: 900;
+  color: #00695c;
+}
+
+.equals {
+  font-size: 1.8em;
+  font-weight: 900;
+  color: #00695c;
+}
+
+.result {
+  font-size: 1.1em;
+  font-weight: 900;
+  color: #00695c;
+  padding: 12px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 150, 136, 0.2);
+}
+
+/* ==========================================
+   مثال‌های محاسبه
+========================================== */
+.example-calc {
+  background: white;
+  border: 2px solid #e0f2f1;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 14px;
+  transition: all 0.3s;
+}
+
+.example-calc:active {
+  transform: scale(0.98);
+  border-color: #009688;
+}
+
+.calc-question {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px dashed #e0f2f1;
+}
+
+.calc-icon {
+  font-size: 1.8em;
+  flex-shrink: 0;
+}
+
+.calc-question strong {
+  color: #00695c;
+  font-size: 0.95em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.calc-question p {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.calc-solution {
+  background: linear-gradient(135deg, #f5fffe, #e0f2f1);
+  padding: 12px 14px;
+  border-radius: 10px;
+  border-right: 4px solid #009688;
+}
+
+.calc-solution p {
+  font-size: 0.92em;
+  color: #333;
+  line-height: 1.8;
+  margin: 4px 0;
+  direction: ltr;
+  text-align: left;
+}
+
+.calc-solution p b {
+  color: #00695c;
+}
+
+.calc-solution p:nth-child(2) {
+  font-family: 'Georgia', serif;
+  font-size: 1em;
+}
+
+/* ==========================================
+   لیست انواع حرکت
+========================================== */
+.props-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.prop-card {
+  padding: 16px;
+  background: white;
+  border: 2px solid #e0f2f1;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.prop-card:active {
+  transform: scale(0.97);
+  border-color: #009688;
+}
+
+.prop-icon {
+  font-size: 2em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.prop-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.prop-desc {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .formula { gap: 8px; }
+  .numerator, .denominator { padding: 3px 10px; font-size: 0.9em; }
+  .equals { font-size: 1.5em; }
+  .result { font-size: 0.95em; padding: 10px 14px; }
+  .calc-icon { font-size: 1.5em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .props-list { grid-template-columns: repeat(2, 1fr); }
+}

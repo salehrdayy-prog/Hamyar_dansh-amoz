@@ -1,0 +1,172 @@
+/* ==========================================
+   فصل ۱۰ علوم — نگاهی به فضا
+========================================== */
+
+@import url('science-lesson1.css');
+
+/* ==========================================
+   بخش ستارگان - کهکشان
+========================================== */
+.galaxy-container {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  border-radius: 16px;
+  padding: 24px 18px;
+  margin-top: 16px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.galaxy-stars {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(2px 2px at 60% 70%, white, transparent),
+    radial-gradient(1px 1px at 50% 50%, white, transparent),
+    radial-gradient(1px 1px at 80% 10%, white, transparent),
+    radial-gradient(2px 2px at 90% 60%, white, transparent),
+    radial-gradient(1px 1px at 33% 80%, white, transparent),
+    radial-gradient(1px 1px at 10% 90%, white, transparent),
+    radial-gradient(2px 2px at 70% 20%, white, transparent);
+  background-size: 100% 100%;
+  opacity: 0.8;
+  animation: twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+.galaxy-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.galaxy-content .galaxy-icon {
+  font-size: 3em;
+  margin-bottom: 8px;
+}
+
+.galaxy-content h3 {
+  font-size: 1.3em;
+  font-weight: 900;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.galaxy-content p {
+  font-size: 0.92em;
+  line-height: 1.8;
+  color: #ddd;
+  max-width: 400px;
+}
+
+/* ==========================================
+   شبکه سیارات
+========================================== */
+.planets-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.planet-card {
+  padding: 16px 10px;
+  background: white;
+  border: 2px solid #e0f2f1;
+  border-radius: 14px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.planet-card:active {
+  transform: scale(0.95);
+  border-color: #009688;
+}
+
+.planet-icon {
+  font-size: 2.2em;
+  margin-bottom: 6px;
+}
+
+.planet-name {
+  font-size: 0.95em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 3px;
+}
+
+.planet-order {
+  font-size: 0.75em;
+  color: #888;
+  font-weight: 700;
+}
+
+/* ==========================================
+   لیست اجرام
+========================================== */
+.props-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.prop-card {
+  padding: 16px;
+  background: white;
+  border: 2px solid #e0f2f1;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.prop-card:active {
+  transform: scale(0.97);
+  border-color: #009688;
+}
+
+.prop-icon {
+  font-size: 2em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.prop-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.prop-desc {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .planet-icon { font-size: 1.8em; }
+  .planet-name { font-size: 0.85em; }
+  .galaxy-content h3 { font-size: 1.1em; }
+  .galaxy-content .galaxy-icon { font-size: 2.4em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .planets-grid { grid-template-columns: repeat(4, 1fr); }
+  .props-list { grid-template-columns: repeat(2, 1fr); }
+}

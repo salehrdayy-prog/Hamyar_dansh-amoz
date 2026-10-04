@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4caf50">
+  <title>درس ۸: متن و ترجمه — عربی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="arabic-style.css">
+  <link rel="stylesheet" href="arabic-lesson1.css">
+  <link rel="stylesheet" href="arabic-lesson5.css">
+</head>
+<body>
+
+  <header class="app-header arabic-header">
+    <a href="arabic.html" class="back-btn">→</a>
+    <h1>📖 درس ۸</h1>
+    <p class="subtitle">متن و ترجمه</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="texts">📋 متن‌ها</button>
+    <button class="lesson-tab" data-tab="vocab">🔤 واژگان</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: آموزش -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>🎓 ترجمه متن‌های بلند</h2>
+      <p class="card-hint">
+        در این درس، متن‌های بلندتر عربی و روش ترجمه آن‌ها را یاد می‌گیریم.
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">📖</div>
+          <h3>متن روایی</h3>
+          <p>داستان کوتاه</p>
+          <div class="motel-example">كانَ تاجِرٌ...</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">📝</div>
+          <h3>متن توصیفی</h3>
+          <p>توصیف طبیعت و اشیا</p>
+          <div class="motel-example">الطَّبيعَةُ جَميلَةٌ...</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">💬</div>
+          <h3>متن دینی</h3>
+          <p>آیات و احادیث</p>
+          <div class="motel-example">قالَ الإمامُ...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💡 گام‌های ترجمه متن بلند</h2>
+      <div class="tip-box">
+        <strong>۱. کل متن را یک بار بخوان</strong>
+        <p>بفهم درباره چیست.</p>
+      </div>
+      <div class="tip-box" style="margin-top:10px">
+        <strong>۲. کلمات ناشناس را یادداشت کن</strong>
+        <p>از واژگان این درس کمک بگیر.</p>
+      </div>
+      <div class="tip-box" style="margin-top:10px">
+        <strong>۳. جمله به جمله ترجمه کن</strong>
+        <p>عجله نکن، هر جمله را جدا ترجمه کن.</p>
+      </div>
+      <div class="tip-box" style="margin-top:10px">
+        <strong>۴. متن فارسی را روان کن</strong>
+        <p>ترتیب فارسی: فاعل + مفعول + فعل.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: متن‌ها -->
+  <section class="lesson-section" data-section="texts">
+
+    <div class="card">
+      <h2>📋 متن‌های عربی</h2>
+      <p class="card-hint">روی هر متن بزن تا ترجمه‌اش رو ببینی</p>
+
+      <div id="textList" class="text-list"></div>
+    </div>
+
+    <div class="card" id="textDetailCard" style="display:none;">
+      <h2 id="textTitle"></h2>
+      <div class="arabic-text-box" id="arabicTextBox"></div>
+      <div class="translation-box" id="translationBox"></div>
+      <div class="word-by-word" id="wordByWordBox"></div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: واژگان -->
+  <section class="lesson-section" data-section="vocab">
+    <div class="card">
+      <h2>🔤 واژگان جدید</h2>
+      <p class="card-hint">کلمات مهم این درس</p>
+
+      <div class="vocab-grid" id="vocabGrid"></div>
+    </div>
+  </section>
+
+  <!-- تب ۴: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">ترجمه درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۵: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۶: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: ترجمه سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — عربی نهم — درس ۸</p>
+  </footer>
+
+  <script src="arabic-lesson8.js"></script>
+  <script src="../voice.js"></script>
+</body>
+</html>

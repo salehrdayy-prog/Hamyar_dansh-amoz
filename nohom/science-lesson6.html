@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#009688">
+  <title>فصل ۶: زمین‌ساخت ورقه‌ای — علوم نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="science-style.css">
+  <link rel="stylesheet" href="science-lesson1.css">
+  <link rel="stylesheet" href="science-lesson6.css">
+</head>
+<body>
+
+  <header class="app-header science-header">
+    <a href="science.html" class="back-btn">→</a>
+    <h1>🔬 فصل ۶</h1>
+    <p class="subtitle">زمین‌ساخت ورقه‌ای</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="layers">🌍 لایه‌ها</button>
+    <button class="lesson-tab" data-tab="plates">🧩 ورقه‌ها</button>
+    <button class="lesson-tab" data-tab="events">💥 پدیده‌ها</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: آموزش -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>🌍 زمین‌ساخت ورقه‌ای چیست؟</h2>
+      <p class="card-hint">
+        نظریه‌ای که می‌گوید پوسته زمین از چند <b>ورقه</b> بزرگ تشکیل شده که روی گوشته‌ی نرم حرکت می‌کنند.
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">🌍</div>
+          <h3>پوسته</h3>
+          <p>لایه نازک بیرونی</p>
+          <div class="motel-example">سنگ‌های سخت</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">🔥</div>
+          <h3>گوشته</h3>
+          <p>لایه ضخیم میانی</p>
+          <div class="motel-example">ماگما (سنگ مذاب)</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">⚛️</div>
+          <h3>هسته</h3>
+          <p>مرکز زمین</p>
+          <div class="motel-example">آهن و نیکل</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📖 ساختار زمین</h2>
+
+      <div class="earth-diagram">
+        <div class="earth-layer earth-crust">
+          <span>پوسته</span>
+        </div>
+        <div class="earth-layer earth-mantle">
+          <span>گوشته</span>
+        </div>
+        <div class="earth-layer earth-outer-core">
+          <span>هسته بیرونی</span>
+        </div>
+        <div class="earth-layer earth-inner-core">
+          <span>هسته داخلی</span>
+        </div>
+      </div>
+
+      <div class="tip-box" style="margin-top:16px">
+        <strong>📌 پوسته</strong>
+        <p>لایه نازک بیرونی زمین — ضخامت ۵ تا ۷۰ کیلومتر. از سنگ ساخته شده.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 گوشته</strong>
+        <p>ضخیم‌ترین لایه — حدود ۲۹۰۰ کیلومتر. سنگ‌های نیمه‌مذاب.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 هسته</strong>
+        <p>مرکز زمین — از آهن و نیکل. بسیار داغ (۵۰۰۰ درجه).</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💡 نکات مهم</h2>
+
+      <div class="tip-box">
+        <strong>📌 ورقه‌ها (پلیت‌ها)</strong>
+        <p>پوسته زمین به قطعات بزرگ به نام ورقه تقسیم شده — حدود ۱۵ ورقه اصلی.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 جریان همرفتی</strong>
+        <p>حرارت درون زمین باعث جریان‌های همرفتی در گوشته می‌شود که ورقه‌ها را حرکت می‌دهد.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 سرعت حرکت ورقه‌ها</strong>
+        <p>حدود ۱ تا ۱۰ سانتی‌متر در سال — مثل رشد ناخن!</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: لایه‌ها -->
+  <section class="lesson-section" data-section="layers">
+
+    <div class="card">
+      <h2>🌍 لایه‌های زمین</h2>
+      <p class="card-hint">روی هر لایه بزن تا اطلاعات کامل را ببینی</p>
+
+      <div id="layersList" class="props-list"></div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: ورقه‌ها -->
+  <section class="lesson-section" data-section="plates">
+
+    <div class="card">
+      <h2>🧩 ورقه‌های زمین</h2>
+      <p class="card-hint">نحوه حرکت ورقه‌ها نسبت به هم</p>
+
+      <div class="plate-types">
+
+        <div class="plate-card plate-divergent">
+          <div class="plate-icon">↔️</div>
+          <h3>واگرا (دور شدن)</h3>
+          <p class="plate-desc">دو ورقه از هم دور می‌شوند — ماگما بالا می‌آید و پوسته جدید ساخته می‌شود.</p>
+          <div class="plate-example">
+            <span class="ex-label">مثال:</span>
+            <span>پشته میان‌اقیانوسی اقیانوس اطلس</span>
+          </div>
+        </div>
+
+        <div class="plate-card plate-convergent">
+          <div class="plate-icon">→←</div>
+          <h3>همگرا (نزدیک شدن)</h3>
+          <p class="plate-desc">دو ورقه به هم نزدیک می‌شوند — یکی زیر دیگری می‌رود یا کوه ایجاد می‌شود.</p>
+          <div class="plate-example">
+            <span class="ex-label">مثال:</span>
+            <span>کوه‌های هیمالیا</span>
+          </div>
+        </div>
+
+        <div class="plate-card plate-transform">
+          <div class="plate-icon">⇄</div>
+          <h3>امتدادلغز (لغزشی)</h3>
+          <p class="plate-desc">دو ورقه در کنار هم می‌لغزند — بدون ساخت یا تخریب.</p>
+          <div class="plate-example">
+            <span class="ex-label">مثال:</span>
+            <span>گسل سان‌آندریاس</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 مقایسه ورقه‌ها</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>نوع</th>
+            <th>حرکت</th>
+            <th>نتیجه</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="arabic">واگرا</td>
+            <td class="meaning-cell">دور شدن</td>
+            <td class="meaning-cell">پوسته جدید</td>
+          </tr>
+          <tr>
+            <td class="arabic">همگرا</td>
+            <td class="meaning-cell">نزدیک شدن</td>
+            <td class="meaning-cell">کوه، آتشفشان</td>
+          </tr>
+          <tr>
+            <td class="arabic">امتدادلغز</td>
+            <td class="meaning-cell">لغزش کنار هم</td>
+            <td class="meaning-cell">زمین‌لرزه</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- تب ۴: پدیده‌ها -->
+  <section class="lesson-section" data-section="events">
+
+    <div class="card">
+      <h2>💥 پدیده‌های زمینی</h2>
+
+      <div class="event-grid">
+
+        <div class="event-card event-quake">
+          <div class="event-icon">🌋</div>
+          <h3>زمین‌لرزه</h3>
+          <p class="event-desc">لرزش ناگهانی پوسته زمین به دلیل آزاد شدن انرژی از گسل‌ها.</p>
+          <div class="event-facts">
+            <span>📌 دستگاه اندازه‌گیری: ریشتر</span>
+            <span>📌 مرکز: کانون زلزله</span>
+          </div>
+        </div>
+
+        <div class="event-card event-volcano">
+          <div class="event-icon">🌋</div>
+          <h3>آتشفشان</h3>
+          <p class="event-desc">خروج ماگما، گاز و خاکستر از درون زمین به سطح.</p>
+          <div class="event-facts">
+            <span>📌 ماگما = سنگ مذاب</span>
+            <span>📌 گدازه = ماگمای سطحی</span>
+          </div>
+        </div>
+
+        <div class="event-card event-mountain">
+          <div class="event-icon">🏔️</div>
+          <h3>کوه‌زایی</h3>
+          <p class="event-desc">برخورد دو ورقه قاره‌ای — چین‌خوردگی و بالا آمدن کوه‌ها.</p>
+          <div class="event-facts">
+            <span>📌 مثال: هیمالیا، زاگرس</span>
+            <span>📌 میلیون‌ها سال طول می‌کشد</span>
+          </div>
+        </div>
+
+        <div class="event-card event-tsunami">
+          <div class="event-icon">🌊</div>
+          <h3>سونامی</h3>
+          <p class="event-desc">موج عظیم اقیانوسی که در اثر زمین‌لرزه زیر دریا ایجاد می‌شود.</p>
+          <div class="event-facts">
+            <span>📌 سرعت: تا ۸۰۰ km/h</span>
+            <span>📌 ارتفاع: تا ۳۰ متر</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 شدت زلزله (ریشتر)</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>ریشتر</th>
+            <th>شدت</th>
+            <th>اثر</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="arabic">۱-۳</td>
+            <td class="meaning-cell">خیلی خفیف</td>
+            <td class="meaning-cell">حس نمی‌شود</td>
+          </tr>
+          <tr>
+            <td class="arabic">۴-۵</td>
+            <td class="meaning-cell">خفیف</td>
+            <td class="meaning-cell">احساس می‌شود، خسارت کم</td>
+          </tr>
+          <tr>
+            <td class="arabic">۶-۷</td>
+            <td class="meaning-cell">متوسط</td>
+            <td class="meaning-cell">خسارت ساختمانی</td>
+          </tr>
+          <tr>
+            <td class="arabic">۸+</td>
+            <td class="meaning-cell">شدید</td>
+            <td class="meaning-cell">تخریب گسترده</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- تب ۵: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">پاسخ درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۶: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۷: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: تشخیص سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — علوم نهم — فصل ۶</p>
+  </footer>
+
+  <script src="science-lesson6.js"></script>
+</body>
+</html>

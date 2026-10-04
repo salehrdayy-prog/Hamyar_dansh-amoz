@@ -1,0 +1,100 @@
+/* ==========================================
+   فصل ۴ ریاضی — توان و ریشه
+========================================== */
+
+@import url('math-lesson1.css');
+
+/* ==========================================
+   دیاگرام توان
+========================================== */
+.formula-box {
+  background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
+  padding: 24px 16px;
+  border-radius: 16px;
+  border: 2px solid #3f51b5;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.formula-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+
+.power-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.power-visual {
+  display: inline-flex;
+  align-items: flex-start;
+  background: white;
+  padding: 16px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(63, 81, 181, 0.2);
+  direction: ltr;
+}
+
+.base {
+  font-family: 'Georgia', serif;
+  font-size: 4em;
+  font-weight: 900;
+  color: #1a237e;
+  line-height: 1;
+}
+
+.exponent {
+  font-family: 'Georgia', serif;
+  font-size: 2.2em;
+  font-weight: 900;
+  color: #f44336;
+  margin-left: 4px;
+  margin-top: -8px;
+  line-height: 1;
+}
+
+.power-meaning {
+  font-family: 'Georgia', serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #2e7d32;
+  direction: ltr;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(46, 125, 50, 0.2);
+}
+
+/* ==========================================
+   جدول رادیکال
+========================================== */
+.conj-table .arabic {
+  font-family: 'Georgia', serif;
+  direction: ltr;
+  font-weight: 900;
+  font-size: 1.1em;
+  color: #1a237e;
+}
+
+.conj-table .meaning-cell {
+  font-family: 'Georgia', 'Vazirmatn', serif;
+  direction: ltr;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .base { font-size: 3em; }
+  .exponent { font-size: 1.8em; }
+  .power-meaning { font-size: 1.2em; padding: 8px 14px; }
+  .conj-table .arabic { font-size: 0.95em; }
+  .conj-table .meaning-cell { font-size: 0.8em; }
+}

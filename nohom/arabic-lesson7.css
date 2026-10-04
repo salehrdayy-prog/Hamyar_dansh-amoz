@@ -1,0 +1,128 @@
+/* ==========================================
+   استایل اختصاصی درس ۷ — تمرین ترکیبی
+========================================== */
+
+.review-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.review-card {
+  padding: 18px 16px;
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid;
+  transition: all 0.3s;
+}
+
+.review-card:active {
+  transform: scale(0.97);
+}
+
+.review-1 {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-color: #2196f3;
+}
+.review-2 {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border-color: #4caf50;
+}
+.review-3 {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-color: #ff9800;
+}
+.review-4 {
+  background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+  border-color: #e91e63;
+}
+
+.review-icon {
+  font-size: 2em;
+  margin-bottom: 6px;
+}
+
+.review-card h3 {
+  font-size: 1.1em;
+  font-weight: 900;
+  margin-bottom: 4px;
+  color: #2c3e50;
+}
+
+.review-1 h3 { color: #1565c0; }
+.review-2 h3 { color: #2e7d32; }
+.review-3 h3 { color: #e65100; }
+.review-4 h3 { color: #ad1457; }
+
+.review-card p {
+  font-size: 0.85em;
+  color: #666;
+  font-weight: 500;
+}
+
+.tip-box {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+  padding: 16px;
+  border-radius: 12px;
+  border-right: 5px solid #ffc107;
+}
+
+.tip-box strong {
+  color: #e65100;
+  font-size: 1.05em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.tip-box p {
+  font-family: 'Vazirmatn', sans-serif;
+  font-size: 1em;
+  color: #333;
+  margin: 6px 0;
+  line-height: 1.8;
+}
+
+/* جای خالی */
+.fill-sentence {
+  font-family: 'Amiri', serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #2c3e50;
+  direction: rtl;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f1f8f4, #e8f5e9);
+  border-radius: 12px;
+  border-right: 5px solid #4caf50;
+  line-height: 2.2;
+  margin-bottom: 16px;
+}
+
+.blank {
+  display: inline-block;
+  min-width: 80px;
+  border-bottom: 3px solid #4caf50;
+  color: #4caf50;
+  font-weight: 900;
+  padding: 0 8px;
+}
+
+/* موبایل کوچک */
+@media (max-width: 360px) {
+  .fill-sentence { font-size: 1.3em; }
+  .review-icon { font-size: 1.6em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .review-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

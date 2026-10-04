@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4caf50">
+  <title>درس ۷: تمرین ترکیبی — عربی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="arabic-style.css">
+  <link rel="stylesheet" href="arabic-lesson1.css">
+  <link rel="stylesheet" href="arabic-lesson7.css">
+</head>
+<body>
+
+  <header class="app-header arabic-header">
+    <a href="arabic.html" class="back-btn">→</a>
+    <h1>📖 درس ۷</h1>
+    <p class="subtitle">تمرین ترکیبی</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 راهنما</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="fillblank">📝 جای خالی</button>
+    <button class="lesson-tab" data-tab="quiz">🎯 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: راهنما -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>📖 کارگاه تمرین ترکیبی</h2>
+      <p class="card-hint">
+        این درس شامل ۴ نوع تمرین از تمام قواعد عربی نهم است.
+      </p>
+
+      <div class="review-grid">
+        <div class="review-card review-1">
+          <div class="review-icon">✏️</div>
+          <h3>تمرین چهارگزینه‌ای</h3>
+          <p>۴ گزینه — یک پاسخ درست</p>
+        </div>
+
+        <div class="review-card review-2">
+          <div class="review-icon">📝</div>
+          <h3>جای خالی</h3>
+          <p>جای خالی را پر کن</p>
+        </div>
+
+        <div class="review-card review-3">
+          <div class="review-icon">🎯</div>
+          <h3>آزمون جامع</h3>
+          <p>۲۰ سؤال ترکیبی</p>
+        </div>
+
+        <div class="review-card review-4">
+          <div class="review-icon">🎮</div>
+          <h3>بازی سرعتی</h3>
+          <p>۶۰ ثانیه چالش</p>
+        </div>
+      </div>
+
+      <div class="tip-box" style="margin-top:20px">
+        <strong>💡 نکته آموزشی:</strong>
+        <p>هدف این درس، تسلط کامل بر قواعد عربی نهم است. هر بار تمرین کن تا در ذهنت جا بیفته.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🎯 سرفصل تمرین‌ها</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>موضوع</th>
+            <th>تعداد سؤال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="meaning-cell">فعل ماضی</td><td>۵ سؤال</td></tr>
+          <tr><td class="meaning-cell">فعل مضارع</td><td>۵ سؤال</td></tr>
+          <tr><td class="meaning-cell">فعل معتل</td><td>۴ سؤال</td></tr>
+          <tr><td class="meaning-cell">امر و نهی</td><td>۴ سؤال</td></tr>
+          <tr><td class="meaning-cell">اسم فاعل و مفعول</td><td>۴ سؤال</td></tr>
+          <tr><td class="meaning-cell">ترجمه</td><td>۳ سؤال</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: تمرین چهارگزینه‌ای -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین چهارگزینه‌ای</h2>
+      <p class="card-hint">سؤالات تصادفی از همه درس‌ها</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۳: جای خالی -->
+  <section class="lesson-section" data-section="fillblank">
+    <div class="card">
+      <h2>📝 جای خالی</h2>
+      <p class="card-hint">کلمه درست را انتخاب کن</p>
+
+      <div id="fillArea">
+        <div id="fillQuestion" class="question-box">برای شروع، دکمه زیر را بزن</div>
+        <div id="fillOptions" class="options"></div>
+        <button id="nextFill" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startFill" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="fillScore">0</span> / <span id="fillTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۴: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>🎯 آزمون جامع (۲۰ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۵: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: چالش عربی!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۹۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — عربی نهم — درس ۷</p>
+  </footer>
+
+  <script src="arabic-lesson7.js"></script>
+  <script src="../voice.js"></script>
+</body>
+</html>

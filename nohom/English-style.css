@@ -1,0 +1,110 @@
+/* ==========================================
+   استایل اختصاصی انگلیسی نهم
+========================================== */
+
+.english-header {
+  background: linear-gradient(135deg, #ff9800 0%, #e65100 100%);
+  box-shadow: 0 8px 25px rgba(255, 152, 0, 0.3);
+}
+
+.english-welcome {
+  border-right-color: #ff9800;
+}
+
+.english-welcome .welcome-text strong {
+  color: #e65100;
+}
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.lesson-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  background: white;
+  border-radius: 18px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+  border: 2px solid #fff3e0;
+}
+
+.lesson-card:active {
+  transform: scale(0.97);
+}
+
+.lesson-card[data-status="ready"] {
+  border-color: #ff9800;
+  background: linear-gradient(135deg, #ffffff 0%, #fff8f0 100%);
+}
+
+.lesson-number {
+  font-size: 1.4em;
+  font-weight: 900;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #ffe0b2, #ffcc80);
+  color: #e65100;
+  font-family: 'Georgia', serif;
+}
+
+.lesson-info {
+  flex: 1;
+  text-align: right;
+  min-width: 0;
+}
+
+.lesson-info h3 {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #2c3e50;
+  margin-bottom: 3px;
+  font-family: 'Georgia', 'Vazirmatn', serif;
+  direction: ltr;
+  text-align: right;
+}
+
+.lesson-info p {
+  font-size: 0.82em;
+  color: #888;
+  font-weight: 500;
+}
+
+.lesson-status {
+  font-size: 1.3em;
+  flex-shrink: 0;
+}
+
+.lesson-status.ready { color: #ff9800; }
+
+.lesson-card {
+  animation: fadeInUp 0.5s ease backwards;
+}
+.lesson-card:nth-child(1) { animation-delay: 0.03s; }
+.lesson-card:nth-child(2) { animation-delay: 0.06s; }
+.lesson-card:nth-child(3) { animation-delay: 0.09s; }
+.lesson-card:nth-child(4) { animation-delay: 0.12s; }
+.lesson-card:nth-child(5) { animation-delay: 0.15s; }
+.lesson-card:nth-child(6) { animation-delay: 0.18s; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 600px) {
+  .lessons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

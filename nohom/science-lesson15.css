@@ -1,0 +1,224 @@
+/* ==========================================
+   فصل ۱۵ علوم — با هم زیستن
+========================================== */
+
+@import url('science-lesson1.css');
+
+/* ==========================================
+   زنجیره غذایی
+========================================== */
+.food-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 20px 10px;
+  background: linear-gradient(135deg, #f5fffe, #e0f2f1);
+  border-radius: 16px;
+  margin-top: 16px;
+}
+
+.chain-item {
+  text-align: center;
+  padding: 12px 8px;
+  min-width: 70px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  border: 2px solid #e0f2f1;
+  transition: all 0.3s;
+}
+
+.chain-item:active {
+  transform: scale(0.95);
+  border-color: #009688;
+}
+
+.chain-sun { background: linear-gradient(135deg, #fff9c4, #fff59d); border-color: #ffc107; }
+.chain-producer { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-color: #4caf50; }
+.chain-herbivore { background: linear-gradient(135deg, #f1f8e9, #dcedc8); border-color: #8bc34a; }
+.chain-carnivore { background: linear-gradient(135deg, #fff3e0, #ffe0b2); border-color: #ff9800; }
+.chain-top { background: linear-gradient(135deg, #ffebee, #ffcdd2); border-color: #f44336; }
+
+.chain-icon {
+  font-size: 1.8em;
+  margin-bottom: 4px;
+}
+
+.chain-label {
+  font-size: 0.78em;
+  font-weight: 900;
+  color: #00695c;
+}
+
+.chain-arrow {
+  font-size: 1.4em;
+  color: #009688;
+  font-weight: 900;
+}
+
+/* ==========================================
+   شبکه غذایی
+========================================== */
+.food-web {
+  background: linear-gradient(135deg, #f5fffe, #e0f2f1);
+  border-radius: 16px;
+  padding: 20px 14px;
+  margin-top: 16px;
+}
+
+.web-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.web-item {
+  padding: 10px 14px;
+  background: white;
+  border-radius: 10px;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #00695c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 2px solid #e0f2f1;
+}
+
+.web-arrows {
+  text-align: center;
+  font-size: 1.2em;
+  color: #009688;
+  font-weight: 900;
+  letter-spacing: 1.5em;
+  padding-right: 1.5em;
+  margin-bottom: 8px;
+}
+
+/* ==========================================
+   هرم انرژی
+========================================== */
+.energy-pyramid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 20px 10px;
+  background: linear-gradient(135deg, #f5fffe, #e0f2f1);
+  border-radius: 16px;
+  margin-top: 16px;
+}
+
+.pyramid-level {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 900;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.pyramid-level:active {
+  transform: scale(0.98);
+}
+
+.level-4 {
+  width: 45%;
+  background: linear-gradient(135deg, #f44336, #c62828);
+}
+
+.level-3 {
+  width: 60%;
+  background: linear-gradient(135deg, #ff9800, #e65100);
+}
+
+.level-2 {
+  width: 78%;
+  background: linear-gradient(135deg, #8bc34a, #558b2f);
+}
+
+.level-1 {
+  width: 95%;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+}
+
+.level-label {
+  font-size: 0.85em;
+  color: white;
+}
+
+.level-percent {
+  font-family: 'Georgia', serif;
+  font-size: 0.85em;
+  color: white;
+  background: rgba(0, 0, 0, 0.15);
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+/* ==========================================
+   لیست روابط
+========================================== */
+.props-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.prop-card {
+  padding: 16px;
+  background: white;
+  border: 2px solid #e0f2f1;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.prop-card:active {
+  transform: scale(0.97);
+  border-color: #009688;
+}
+
+.prop-icon {
+  font-size: 2em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.prop-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.prop-desc {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .chain-item { min-width: 60px; padding: 10px 6px; }
+  .chain-icon { font-size: 1.5em; }
+  .chain-label { font-size: 0.7em; }
+  .chain-arrow { font-size: 1.1em; }
+  .web-item { font-size: 0.75em; padding: 8px 10px; }
+  .pyramid-level { padding: 10px 12px; }
+  .level-label { font-size: 0.75em; }
+  .level-percent { font-size: 0.75em; padding: 3px 8px; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .props-list { grid-template-columns: repeat(2, 1fr); }
+}

@@ -1,0 +1,54 @@
+/* ==========================================
+   Lesson 2 — Personal Experiences
+========================================== */
+
+@import url('english-lesson1.css');
+
+/* ==========================================
+   بخش‌های اضافی این درس
+========================================== */
+
+/* افعال بی‌قاعده */
+.irregular-verbs-table th {
+  background: #fff8f0;
+  color: #e65100;
+}
+
+.irregular-verbs-table td {
+  font-family: 'Georgia', serif;
+  direction: ltr;
+  text-align: center;
+}
+
+.irregular-verbs-table td.meaning-cell {
+  font-family: 'Vazirmatn', sans-serif;
+  direction: rtl;
+  text-align: right;
+  color: #555;
+  font-size: 0.88em;
+}
+
+/* رنگ کارت‌های گرامر */
+.rule-box {
+  border-right-color: #ff9800;
+}
+
+.rule-box h3 {
+  color: #e65100;
+}
+
+/* برجسته‌سازی کلمات گرامری */
+.rule-desc b {
+  color: #e65100;
+  background: #fff3e0;
+  padding: 1px 6px;
+  border-radius: 6px;
+}
+
+/* موبایل */
+@media (max-width: 360px) {
+  .irregular-verbs-table td {
+    font-size: 0.85em;
+    padding: 8px 4px;
+  }
+}

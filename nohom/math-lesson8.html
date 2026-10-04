@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3f51b5">
+  <title>فصل ۸: آمار و احتمال — ریاضی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="math-style.css">
+  <link rel="stylesheet" href="math-lesson1.css">
+  <link rel="stylesheet" href="math-lesson8.css">
+</head>
+<body>
+
+  <header class="app-header math-header">
+    <a href="math.html" class="back-btn">→</a>
+    <h1>🔢 فصل ۸</h1>
+    <p class="subtitle">آمار و احتمال</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="stats">📊 آمار</button>
+    <button class="lesson-tab" data-tab="probability">🎲 احتمال</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: آموزش -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>📊 آمار و احتمال</h2>
+      <p class="card-hint">
+        <b>آمار</b>: جمع‌آوری و تحلیل داده‌ها · <b>احتمال</b>: اندازه‌گیری شانس رخ دادن یک رویداد.
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">📊</div>
+          <h3>آمار</h3>
+          <p>میانگین، میانه، مد</p>
+          <div class="motel-example">نمرات کلاس</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">🎲</div>
+          <h3>احتمال</h3>
+          <p>شانس رخ دادن</p>
+          <div class="motel-example">تاس، سکه</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">🎯</div>
+          <h3>رویداد</h3>
+          <p>نتیجه‌ی ممکن</p>
+          <div class="motel-example">شیر یا خط</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📖 مفاهیم مهم آمار</h2>
+
+      <div class="tip-box">
+        <strong>📌 میانگین</strong>
+        <p>مجموع داده‌ها ÷ تعداد داده‌ها</p>
+        <p>مثال: (10+12+14+16) ÷ 4 = 13</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 میانه</strong>
+        <p>داده وسط بعد از مرتب کردن. اگر تعداد زوج بود، میانگین دو وسط.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 مد</strong>
+        <p>داده‌ای که بیشترین تکرار را دارد.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 دامنه</strong>
+        <p>بزرگ‌ترین داده − کوچک‌ترین داده</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💡 مفاهیم مهم احتمال</h2>
+
+      <div class="tip-box">
+        <strong>📌 احتمال = تعداد حالت مطلوب ÷ تعداد کل حالت‌ها</strong>
+        <p>احتمال همیشه عددی بین ۰ و ۱ است.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 احتمال رویداد حتمی = ۱</strong>
+        <p>مثل: احتمال اینکه خورشید فردا طلوع کند.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 احتمال رویداد غیرممکن = ۰</strong>
+        <p>مثل: احتمال آمدن ۷ در تاس شش‌وجهی.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: آمار -->
+  <section class="lesson-section" data-section="stats">
+
+    <div class="card">
+      <h2>📊 مفاهیم آماری</h2>
+      <p class="card-hint">روی هر مفهوم بزن تا اطلاعات کامل را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="central">🎯 مرکزی</button>
+        <button class="motel-tab" data-type="spread">📏 پراکندگی</button>
+        <button class="motel-tab" data-type="charts">📈 نمودارها</button>
+      </div>
+
+      <div id="statsList" class="props-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>📐 مثال محاسبه</h2>
+
+      <div class="example-stats">
+        <div class="example-header">داده‌ها: 5، 8، 8، 10، 14</div>
+
+        <div class="example-row">
+          <span class="row-label">میانگین</span>
+          <span class="row-calc">(5+8+8+10+14) ÷ 5 = 45 ÷ 5 = 9</span>
+        </div>
+
+        <div class="example-row">
+          <span class="row-label">میانه</span>
+          <span class="row-calc">داده وسط (بعد از مرتب) = 8</span>
+        </div>
+
+        <div class="example-row">
+          <span class="row-label">مد</span>
+          <span class="row-calc">بیشترین تکرار = 8</span>
+        </div>
+
+        <div class="example-row">
+          <span class="row-label">دامنه</span>
+          <span class="row-calc">14 − 5 = 9</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: احتمال -->
+  <section class="lesson-section" data-section="probability">
+
+    <div class="card">
+      <h2>🎲 مفاهیم احتمال</h2>
+      <p class="card-hint">روی هر دسته بزن تا اطلاعات کامل را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="basic">🎯 پایه</button>
+        <button class="motel-tab" data-type="dice">🎲 تاس و سکه</button>
+        <button class="motel-tab" data-type="rules">📐 قواعد</button>
+      </div>
+
+      <div id="probList" class="props-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>📊 جدول احتمال تاس</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>رویداد</th>
+            <th>حالت مطلوب</th>
+            <th>احتمال</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="arabic">عدد ۱</td><td class="meaning-cell">۱</td><td class="meaning-cell">۱/۶</td></tr>
+          <tr><td class="arabic">عدد ۶</td><td class="meaning-cell">۱</td><td class="meaning-cell">۱/۶</td></tr>
+          <tr><td class="arabic">عدد زوج</td><td class="meaning-cell">۲،۴،۶ → ۳</td><td class="meaning-cell">۳/۶ = ۱/۲</td></tr>
+          <tr><td class="arabic">عدد فرد</td><td class="meaning-cell">۱،۳،۵ → ۳</td><td class="meaning-cell">۳/۶ = ۱/۲</td></tr>
+          <tr><td class="arabic">عدد کمتر از ۳</td><td class="meaning-cell">۱،۲ → ۲</td><td class="meaning-cell">۲/۶ = ۱/۳</td></tr>
+          <tr><td class="arabic">عدد بزرگ‌تر از ۶</td><td class="meaning-cell">۰</td><td class="meaning-cell">۰ (غیرممکن)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>🪙 احتمال سکه</h2>
+      <div class="coin-grid">
+        <div class="coin-card">
+          <div class="coin-icon">🪙</div>
+          <h3>شیر</h3>
+          <p>احتمال = ۱/۲</p>
+        </div>
+        <div class="coin-card">
+          <div class="coin-icon">🪙</div>
+          <h3>خط</h3>
+          <p>احتمال = ۱/۲</p>
+        </div>
+      </div>
+      <div class="tip-box" style="margin-top:16px">
+        <strong>📌 دو بار پرتاب سکه</strong>
+        <p>حالت‌ها: (شیر،شیر) · (شیر،خط) · (خط،شیر) · (خط،خط)</p>
+        <p>احتمال هر کدام = ۱/۴</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۴: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">پاسخ درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۵: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۶: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: احتمال سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — ریاضی نهم — فصل ۸</p>
+    <p class="version">🎓 پایان ریاضی نهم 🎓</p>
+  </footer>
+
+  <script src="math-lesson8.js"></script>
+</body>
+</html>

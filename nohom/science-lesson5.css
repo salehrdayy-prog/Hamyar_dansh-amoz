@@ -1,0 +1,168 @@
+/* ==========================================
+   فصل ۵ علوم — نیرو
+========================================== */
+
+@import url('science-lesson1.css');
+
+/* ==========================================
+   شبکه اثرات نیرو
+========================================== */
+.effects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.effect-card {
+  padding: 18px 16px;
+  border-radius: 14px;
+  border: 2px solid;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.effect-card:active {
+  transform: scale(0.97);
+}
+
+.effect-1 {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-color: #2196f3;
+}
+.effect-2 {
+  background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+  border-color: #f44336;
+}
+.effect-3 {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-color: #ff9800;
+}
+.effect-4 {
+  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+  border-color: #9c27b0;
+}
+.effect-5 {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border-color: #4caf50;
+}
+.effect-6 {
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+  border-color: #00bcd4;
+}
+
+.effect-icon {
+  font-size: 2.2em;
+  margin-bottom: 8px;
+}
+
+.effect-card h3 {
+  font-size: 1.1em;
+  font-weight: 900;
+  margin-bottom: 6px;
+  color: #2c3e50;
+}
+
+.effect-1 h3 { color: #1565c0; }
+.effect-2 h3 { color: #c62828; }
+.effect-3 h3 { color: #e65100; }
+.effect-4 h3 { color: #6a1b9a; }
+.effect-5 h3 { color: #2e7d32; }
+.effect-6 h3 { color: #00838f; }
+
+.effect-card p {
+  font-size: 0.88em;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.effect-example {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #333;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* ==========================================
+   شبکه تعادل نیروها
+========================================== */
+.balance-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.balance-card {
+  padding: 22px 18px;
+  border-radius: 16px;
+  border: 2px solid;
+  text-align: center;
+}
+
+.balance-card.balanced {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border-color: #4caf50;
+}
+
+.balance-card.unbalanced {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-color: #ff9800;
+}
+
+.balance-icon {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.balance-card h3 {
+  font-size: 1.2em;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.balanced h3 { color: #2e7d32; }
+.unbalanced h3 { color: #e65100; }
+
+.balance-card p {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.balance-example {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #333;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .effect-icon { font-size: 1.8em; }
+  .effect-card h3 { font-size: 1em; }
+  .balance-icon { font-size: 2em; }
+  .balance-card h3 { font-size: 1.05em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .effects-grid { grid-template-columns: repeat(2, 1fr); }
+  .balance-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 800px) {
+  .effects-grid { grid-template-columns: repeat(3, 1fr); }
+}

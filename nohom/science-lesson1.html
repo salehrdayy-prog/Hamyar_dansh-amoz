@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#009688">
+  <title>فصل ۱: مواد و نقش آنها — علوم نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="science-style.css">
+  <link rel="stylesheet" href="science-lesson1.css">
+</head>
+<body>
+
+  <header class="app-header science-header">
+    <a href="science.html" class="back-btn">→</a>
+    <h1>🔬 فصل ۱</h1>
+    <p class="subtitle">مواد و نقش آنها</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="properties">🎯 خواص</button>
+    <button class="lesson-tab" data-tab="changes">🔄 تغییرات</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: آموزش -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>🔬 مواد چیست؟</h2>
+      <p class="card-hint">
+        هر چیزی که جرم دارد و فضا اشغال می‌کند، ماده است. مواد همه جا هستند: در هوا، آب، زمین و بدن ما.
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">💧</div>
+          <h3>حالت جامد</h3>
+          <p>شکل و حجم ثابت</p>
+          <div class="motel-example">سنگ · یخ · چوب</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">🌊</div>
+          <h3>حالت مایع</h3>
+          <p>حجم ثابت، شکل متغیر</p>
+          <div class="motel-example">آب · روغن · شیر</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">💨</div>
+          <h3>حالت گاز</h3>
+          <p>شکل و حجم متغیر</p>
+          <div class="motel-example">اکسیژن · بخار · هوا</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🎯 خواص مواد</h2>
+
+      <div class="tip-box">
+        <strong>📌 خواص فیزیکی</strong>
+        <p>رنگ، بو، مزه، چگالی، سختی، ذوب، جوش، رسانایی</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 خواص شیمیایی</strong>
+        <p>واکنش‌پذیری، اشتعال، زنگ‌زدن، ترکیب با اکسیژن</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💡 کاربرد مواد</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>ماده</th>
+            <th>خواص</th>
+            <th>کاربرد</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="arabic">آهن</td>
+            <td class="meaning-cell">محکم، رسانا</td>
+            <td class="meaning-cell">ساختمان، پل</td>
+          </tr>
+          <tr>
+            <td class="arabic">مس</td>
+            <td class="meaning-cell">رسانای خوب برق</td>
+            <td class="meaning-cell">سیم برق</td>
+          </tr>
+          <tr>
+            <td class="arabic">شیشه</td>
+            <td class="meaning-cell">شفاف، شکننده</td>
+            <td class="meaning-cell">پنجره، لیوان</td>
+          </tr>
+          <tr>
+            <td class="arabic">پلاستیک</td>
+            <td class="meaning-cell">سبک، عایق</td>
+            <td class="meaning-cell">بطری، اسباب‌بازی</td>
+          </tr>
+          <tr>
+            <td class="arabic">آلومینیوم</td>
+            <td class="meaning-cell">سبک، مقاوم</td>
+            <td class="meaning-cell">قوطی، هواپیما</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: خواص -->
+  <section class="lesson-section" data-section="properties">
+
+    <div class="card">
+      <h2>🎯 خواص مواد</h2>
+      <p class="card-hint">روی هر دسته بزن تا خواص را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="physical">🔵 فیزیکی</button>
+        <button class="motel-tab" data-type="chemical">🟢 شیمیایی</button>
+        <button class="motel-tab" data-type="mechanical">⚙️ مکانیکی</button>
+      </div>
+
+      <div id="propsList" class="props-list"></div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: تغییرات -->
+  <section class="lesson-section" data-section="changes">
+
+    <div class="card">
+      <h2>🔄 تغییرات مواد</h2>
+      <p class="card-hint">
+        وقتی ماده تغییر می‌کند، یا <b>فیزیکی</b> است یا <b>شیمیایی</b>.
+      </p>
+
+      <div class="change-grid">
+        <div class="change-card physical">
+          <div class="change-icon">💧</div>
+          <h3>تغییر فیزیکی</h3>
+          <p class="change-desc">ماده هنوز همان ماده است، فقط شکل یا حالتش عوض شده.</p>
+          <div class="change-examples">
+            <span class="ex-item">🧊 یخ → آب</span>
+            <span class="ex-item">📄 کاغذ پاره</span>
+            <span class="ex-item">🍬 شکر خرد شده</span>
+          </div>
+        </div>
+
+        <div class="change-card chemical">
+          <div class="change-icon">🔥</div>
+          <h3>تغییر شیمیایی</h3>
+          <p class="change-desc">ماده جدیدی با خواص متفاوت ساخته می‌شود.</p>
+          <div class="change-examples">
+            <span class="ex-item">🔥 سوختن چوب</span>
+            <span class="ex-item">🔨 زنگ‌زدن آهن</span>
+            <span class="ex-item">🥚 پختن تخم‌مرغ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📊 مقایسه</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>ویژگی</th>
+            <th>فیزیکی</th>
+            <th>شیمیایی</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="arabic">ماده جدید</td>
+            <td class="meaning-cell">❌ ساخته نمی‌شود</td>
+            <td class="meaning-cell">✅ ساخته می‌شود</td>
+          </tr>
+          <tr>
+            <td class="arabic">برگشت‌پذیری</td>
+            <td class="meaning-cell">معمولاً برگشت‌پذیر</td>
+            <td class="meaning-cell">معمولاً برگشت‌ناپذیر</td>
+          </tr>
+          <tr>
+            <td class="arabic">مثال</td>
+            <td class="meaning-cell">ذوب یخ</td>
+            <td class="meaning-cell">سوختن</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- تب ۴: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">پاسخ درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۵: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۶: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: تشخیص سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — علوم نهم — فصل ۱</p>
+  </footer>
+
+  <script src="science-lesson1.js"></script>
+</body>
+</html>

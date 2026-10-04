@@ -1,0 +1,258 @@
+/* ==========================================
+   استایل اختصاصی درس ۹ — قواعد پیشرفته
+========================================== */
+
+.review-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.review-card {
+  padding: 18px 16px;
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid;
+  transition: all 0.3s;
+}
+
+.review-card:active {
+  transform: scale(0.97);
+}
+
+.review-1 {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-color: #2196f3;
+}
+.review-2 {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border-color: #4caf50;
+}
+.review-3 {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-color: #ff9800;
+}
+.review-4 {
+  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+  border-color: #9c27b0;
+}
+
+.review-icon {
+  font-size: 2em;
+  margin-bottom: 6px;
+}
+
+.review-card h3 {
+  font-size: 1.1em;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.review-1 h3 { color: #1565c0; }
+.review-2 h3 { color: #2e7d32; }
+.review-3 h3 { color: #e65100; }
+.review-4 h3 { color: #6a1b9a; }
+
+.review-card p {
+  font-size: 0.85em;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.review-example {
+  font-family: 'Amiri', 'Vazirmatn', serif;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #2c3e50;
+  direction: rtl;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+.tip-box {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+  padding: 16px;
+  border-radius: 12px;
+  border-right: 5px solid #ffc107;
+}
+
+.tip-box strong {
+  color: #e65100;
+  font-size: 1.05em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.tip-box p {
+  font-family: 'Vazirmatn', sans-serif;
+  font-size: 1em;
+  color: #333;
+  margin: 4px 0;
+  line-height: 1.8;
+}
+
+.tip-box-small {
+  background: #fff8e1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border-right: 4px solid #ffc107;
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: #333;
+  line-height: 1.7;
+}
+
+.tip-box-small b {
+  color: #e65100;
+}
+
+.rule-text {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  font-weight: 700;
+  color: #2e7d32;
+  text-align: center;
+  font-size: 0.95em;
+}
+
+.rule-box {
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.rule-box h3 {
+  color: #4caf50;
+  margin-bottom: 12px;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.rule-desc {
+  font-size: 0.92em;
+  color: #555;
+  line-height: 1.9;
+}
+
+.rule-desc b {
+  color: #2e7d32;
+}
+
+/* تب‌های مثال */
+.motel-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.motel-tab {
+  padding: 10px 16px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #666;
+  transition: all 0.3s;
+  flex: 1;
+  min-width: 100px;
+}
+
+.motel-tab:active {
+  transform: scale(0.97);
+}
+
+.motel-tab[data-type="marefe"].active {
+  background: #2196f3;
+  color: white;
+  border-color: #2196f3;
+}
+.motel-tab[data-type="ezafe"].active {
+  background: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+.motel-tab[data-type="sifat"].active {
+  background: #ff9800;
+  color: white;
+  border-color: #ff9800;
+}
+.motel-tab[data-type="esmiye"].active {
+  background: #9c27b0;
+  color: white;
+  border-color: #9c27b0;
+}
+
+.examples-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.example-card {
+  padding: 16px;
+  background: white;
+  border: 2px solid #e8f5e9;
+  border-radius: 14px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.example-card:active {
+  transform: scale(0.97);
+}
+
+.example-arabic {
+  font-family: 'Amiri', serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #2e7d32;
+  direction: rtl;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.example-meaning {
+  font-family: 'Vazirmatn', sans-serif;
+  font-size: 1em;
+  color: #555;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.example-note {
+  font-size: 0.85em;
+  color: #999;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+@media (max-width: 360px) {
+  .motel-tab { font-size: 0.8em; padding: 8px 10px; min-width: 80px; }
+  .review-icon { font-size: 1.6em; }
+}
+
+@media (min-width: 600px) {
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .examples-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .review-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

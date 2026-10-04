@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3f51b5">
+  <title>فصل ۱: مجموعه‌ها — ریاضی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="math-style.css">
+  <link rel="stylesheet" href="math-lesson1.css">
+</head>
+<body>
+
+  <header class="app-header math-header">
+    <a href="math.html" class="back-btn">→</a>
+    <h1>🔢 فصل ۱</h1>
+    <p class="subtitle">مجموعه‌ها</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="operations">➕ عملیات</button>
+    <button class="lesson-tab" data-tab="types">📊 انواع</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: آموزش -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>📚 مجموعه چیست؟</h2>
+      <p class="card-hint">
+        مجموعه، گروهی از اشیا یا اعداد است که با یک ویژگی مشترک کنار هم قرار گرفته‌اند.
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">🍎</div>
+          <h3>مجموعه میوه‌ها</h3>
+          <p>سیب، پرتقال، موز</p>
+          <div class="motel-example">{🍎, 🍊, 🍌}</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">🔢</div>
+          <h3>مجموعه اعداد</h3>
+          <p>اعداد طبیعی کوچک</p>
+          <div class="motel-example">{1, 2, 3, 4, 5}</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">⚪</div>
+          <h3>مجموعه تهی</h3>
+          <p>بدون عضو</p>
+          <div class="motel-example">{ } یا ∅</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📖 نمایش مجموعه</h2>
+
+      <div class="tip-box">
+        <strong>📌 نمایش با اعضا ( roster )</strong>
+        <p>اعضا را داخل {} می‌نویسیم:</p>
+        <p>A = { ۱, ۲, ۳, ۴, ۵ }</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 نمایش با شرط ( set-builder )</strong>
+        <p>ویژگی اعضا را می‌نویسیم:</p>
+        <p>A = { x | x عدد طبیعی کوچک‌تر از ۶ }</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 نمادها</strong>
+        <p>∈ = عضویت دارد</p>
+        <p>∉ = عضویت ندارد</p>
+        <p>⊂ = زیرمجموعه است</p>
+        <p>∅ = مجموعه تهی</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💡 نکات مهم</h2>
+
+      <div class="tip-box">
+        <strong>📌 ترتیب اعضا مهم نیست</strong>
+        <p>{1, 2, 3} = {3, 1, 2} ✓</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 تکرار اعضا حذف می‌شود</strong>
+        <p>{1, 1, 2, 3} = {1, 2, 3} ✓</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📌 عضویت و عدم عضویت</strong>
+        <p>۲ ∈ {1, 2, 3} ✓ (عضو است)</p>
+        <p>۵ ∉ {1, 2, 3} ✓ (عضو نیست)</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: عملیات -->
+  <section class="lesson-section" data-section="operations">
+
+    <div class="card">
+      <h2>➕ عملیات روی مجموعه‌ها</h2>
+      <p class="card-hint">روی هر عملیات بزن تا اطلاعات کامل را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="union">∪ اجتماع</button>
+        <button class="motel-tab" data-type="intersection">∩ اشتراک</button>
+        <button class="motel-tab" data-type="difference">− تفاضل</button>
+        <button class="motel-tab" data-type="complement">' متمم</button>
+      </div>
+
+      <div id="operationsList" class="props-list"></div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: انواع -->
+  <section class="lesson-section" data-section="types">
+
+    <div class="card">
+      <h2>📊 انواع مجموعه‌ها</h2>
+      <p class="card-hint">روی هر نوع بزن تا اطلاعات کامل را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="special">✨ خاص</button>
+        <button class="motel-tab" data-type="numbers">🔢 عددی</button>
+        <button class="motel-tab" data-type="relation">🔗 رابطه</button>
+      </div>
+
+      <div id="typesList" class="props-list"></div>
+    </div>
+
+  </section>
+
+  <!-- تب ۴: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">پاسخ درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۵: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۶: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: تشخیص سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — ریاضی نهم — فصل ۱</p>
+  </footer>
+
+  <script src="math-lesson1.js"></script>
+</body>
+</html>

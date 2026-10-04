@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3f51b5">
+  <title>فصل ۷: هندسه — ریاضی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="math-style.css">
+  <link rel="stylesheet" href="math-lesson1.css">
+  <link rel="stylesheet" href="math-lesson7.css">
+</head>
+<body>
+
+  <header class="app-header math-header">
+    <a href="math.html" class="back-btn">→</a>
+    <h1>🔢 فصل ۷</h1>
+    <p class="subtitle">هندسه</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="similar">🔷 تشابه</button>
+    <button class="lesson-tab" data-tab="thales">📐 قضیه تالس</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: آموزش -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>📐 هندسه — تشابه و تالس</h2>
+      <p class="card-hint">
+        در این فصل با <b>تشابه</b> مثلث‌ها و <b>قضیه تالس</b> آشنا می‌شویم.
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">🔷</div>
+          <h3>تشابه</h3>
+          <p>شکل یکسان، اندازه متفاوت</p>
+          <div class="motel-example">دو مثلث متشابه</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">📐</div>
+          <h3>تالس</h3>
+          <p>خطوط موازی و تقسیم</p>
+          <div class="motel-example">نسبت‌ها در مثلث</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">△</div>
+          <h3>مثلث</h3>
+          <p>پایه هندسه</p>
+          <div class="motel-example">زوایا، اضلاع</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📖 مفاهیم مهم</h2>
+
+      <div class="tip-box">
+        <strong>🔷 تشابه</strong>
+        <p>دو شکل متشابه‌اند اگر زوایای متناظر برابر و اضلاع متناظر متناسب باشند.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📐 قضیه تالس</strong>
+        <p>اگر خطی موازی یک ضلع مثلث باشد، دو ضلع دیگر را به نسبت تقسیم می‌کند.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>📏 نسبت تشابه</strong>
+        <p>نسبت اضلاع متناظر در دو مثلث متشابه، نسبت تشابه نامیده می‌شود.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>△ علامت تشابه</strong>
+        <p>دو مثلث متشابه را با علامت ∼ نشان می‌دهیم: △ABC ∼ △DEF</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💡 حالات تشابه مثلث‌ها</h2>
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>حالت</th>
+            <th>توضیح</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="arabic">زز</td>
+            <td class="meaning-cell">دو زاویه برابر (زوایای سوم هم برابر)</td>
+          </tr>
+          <tr>
+            <td class="arabic">ضض</td>
+            <td class="meaning-cell">دو ضلع متناسب و زاویه بین برابر</td>
+          </tr>
+          <tr>
+            <td class="arabic">ضضض</td>
+            <td class="meaning-cell">سه ضلع متناسب</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: تشابه -->
+  <section class="lesson-section" data-section="similar">
+
+    <div class="card">
+      <h2>🔷 تشابه مثلث‌ها</h2>
+      <p class="card-hint">روی هر دسته بزن تا اطلاعات کامل را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="concept">🎯 مفهوم</button>
+        <button class="motel-tab" data-type="cases">📐 حالات</button>
+        <button class="motel-tab" data-type="ratio">📏 نسبت‌ها</button>
+      </div>
+
+      <div id="similarList" class="props-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>🔷 شکل بصری تشابه</h2>
+      <div class="similar-visual">
+        <div class="triangle triangle-small">
+          <div class="tri-label">△ABC</div>
+        </div>
+        <div class="similar-symbol">∼</div>
+        <div class="triangle triangle-big">
+          <div class="tri-label">△DEF</div>
+        </div>
+      </div>
+      <div class="similar-formula">
+        <div>AB/DE = BC/EF = AC/DF</div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: تالس -->
+  <section class="lesson-section" data-section="thales">
+
+    <div class="card">
+      <h2>📐 قضیه تالس</h2>
+      <p class="card-hint">روی هر دسته بزن تا اطلاعات کامل را ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="statement">📝 صورت قضیه</button>
+        <button class="motel-tab" data-type="example">🎯 مثال</button>
+        <button class="motel-tab" data-type="uses">💡 کاربرد</button>
+      </div>
+
+      <div id="thalesList" class="props-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>📐 شکل قضیه تالس</h2>
+      <div class="thales-visual">
+        <svg viewBox="0 0 300 200" class="thales-svg">
+          <!-- Triangle -->
+          <polygon points="150,20 30,180 270,180" fill="none" stroke="#3f51b5" stroke-width="3"/>
+          <!-- Parallel line -->
+          <line x1="90" y1="100" x2="210" y2="100" stroke="#f44336" stroke-width="3" stroke-dasharray="6,4"/>
+          <!-- Labels -->
+          <text x="150" y="15" text-anchor="middle" font-size="14" font-weight="bold" fill="#3f51b5">A</text>
+          <text x="20" y="195" text-anchor="middle" font-size="14" font-weight="bold" fill="#3f51b5">B</text>
+          <text x="280" y="195" text-anchor="middle" font-size="14" font-weight="bold" fill="#3f51b5">C</text>
+          <text x="85" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#f44336">D</text>
+          <text x="215" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#f44336">E</text>
+        </svg>
+      </div>
+      <div class="thales-formula">
+        <p>DE ∥ BC ⟹ AD/DB = AE/EC</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۴: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">پاسخ درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۵: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۶: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: تشخیص سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — ریاضی نهم — فصل ۷</p>
+  </footer>
+
+  <script src="math-lesson7.js"></script>
+</body>
+</html>

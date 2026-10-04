@@ -1,0 +1,106 @@
+/* ==========================================
+   استایل اختصاصی ریاضی نهم
+========================================== */
+
+.math-header {
+  background: linear-gradient(135deg, #3f51b5 0%, #1a237e 100%);
+  box-shadow: 0 8px 25px rgba(63, 81, 181, 0.3);
+}
+
+.math-welcome {
+  border-right-color: #3f51b5;
+}
+
+.math-welcome .welcome-text strong {
+  color: #1a237e;
+}
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.lesson-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  background: white;
+  border-radius: 18px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+  border: 2px solid #e8eaf6;
+}
+
+.lesson-card:active {
+  transform: scale(0.97);
+}
+
+.lesson-card[data-status="ready"] {
+  border-color: #3f51b5;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f6ff 100%);
+}
+
+.lesson-number {
+  font-size: 1.3em;
+  font-weight: 900;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #c5cae9, #9fa8da);
+  color: #1a237e;
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+.lesson-info {
+  flex: 1;
+  text-align: right;
+}
+
+.lesson-info h3 {
+  font-size: 1.1em;
+  font-weight: 900;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+.lesson-info p {
+  font-size: 0.85em;
+  color: #888;
+  font-weight: 500;
+}
+
+.lesson-status {
+  font-size: 1.3em;
+  flex-shrink: 0;
+}
+
+.lesson-status.ready { color: #3f51b5; }
+
+.lesson-card {
+  animation: fadeInUp 0.5s ease backwards;
+}
+.lesson-card:nth-child(1) { animation-delay: 0.03s; }
+.lesson-card:nth-child(2) { animation-delay: 0.06s; }
+.lesson-card:nth-child(3) { animation-delay: 0.09s; }
+.lesson-card:nth-child(4) { animation-delay: 0.12s; }
+.lesson-card:nth-child(5) { animation-delay: 0.15s; }
+.lesson-card:nth-child(6) { animation-delay: 0.18s; }
+.lesson-card:nth-child(7) { animation-delay: 0.21s; }
+.lesson-card:nth-child(8) { animation-delay: 0.24s; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (min-width: 600px) {
+  .lessons-grid { grid-template-columns: repeat(2, 1fr); }
+}

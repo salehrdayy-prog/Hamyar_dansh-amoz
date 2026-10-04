@@ -1,0 +1,157 @@
+/* ==========================================
+   فصل ۵ ریاضی — عبارت‌های جبری
+========================================== */
+
+@import url('math-lesson1.css');
+
+/* ==========================================
+   کارت‌های اتحاد
+========================================== */
+.identity-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.identity-card {
+  padding: 18px 16px;
+  border-radius: 16px;
+  border: 2px solid;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.identity-card:active {
+  transform: scale(0.98);
+}
+
+.identity-1 {
+  background: linear-gradient(135deg, #e8eaf6, #c5cae9);
+  border-color: #3f51b5;
+}
+.identity-2 {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-color: #2196f3;
+}
+.identity-3 {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  border-color: #4caf50;
+}
+.identity-4 {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-color: #ff9800;
+}
+.identity-5 {
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+  border-color: #9c27b0;
+}
+.identity-6 {
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  border-color: #e91e63;
+}
+
+.identity-icon {
+  font-size: 1.5em;
+  margin-bottom: 6px;
+}
+
+.identity-card h3 {
+  font-size: 1em;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.identity-1 h3 { color: #1a237e; }
+.identity-2 h3 { color: #1565c0; }
+.identity-3 h3 { color: #2e7d32; }
+.identity-4 h3 { color: #e65100; }
+.identity-5 h3 { color: #6a1b9a; }
+.identity-6 h3 { color: #ad1457; }
+
+.identity-formula {
+  font-family: 'Georgia', serif;
+  font-size: 1em;
+  font-weight: 900;
+  color: #333;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  direction: ltr;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.identity-example {
+  font-family: 'Georgia', serif;
+  font-size: 0.88em;
+  font-weight: 700;
+  color: #00695c;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  direction: ltr;
+}
+
+/* ==========================================
+   لیست تجزیه
+========================================== */
+.props-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.prop-card {
+  padding: 16px;
+  background: white;
+  border: 2px solid #e8eaf6;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.prop-card:active {
+  transform: scale(0.97);
+  border-color: #3f51b5;
+}
+
+.prop-icon {
+  font-size: 2em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.prop-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #1a237e;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.prop-desc {
+  font-size: 0.92em;
+  color: #666;
+  line-height: 1.8;
+  text-align: center;
+  font-family: 'Georgia', 'Vazirmatn', serif;
+  direction: ltr;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .identity-icon { font-size: 1.3em; }
+  .identity-card h3 { font-size: 0.9em; }
+  .identity-formula { font-size: 0.85em; padding: 8px; }
+  .identity-example { font-size: 0.78em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .identity-grid { grid-template-columns: repeat(2, 1fr); }
+  .props-list { grid-template-columns: repeat(2, 1fr); }
+}

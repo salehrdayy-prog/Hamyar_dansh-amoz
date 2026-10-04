@@ -1,0 +1,145 @@
+/* ==========================================
+   فصل ۱۳ علوم — جانوران بی‌مهره
+========================================== */
+
+@import url('science-lesson1.css');
+
+/* ==========================================
+   شبکه مقایسه بندپایان
+========================================== */
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.compare-card {
+  padding: 20px 16px;
+  border-radius: 16px;
+  border: 2px solid;
+}
+
+.compare-insect {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-color: #ff9800;
+}
+
+.compare-arachnid {
+  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+  border-color: #9c27b0;
+}
+
+.compare-crustacean {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-color: #2196f3;
+}
+
+.compare-myriapod {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border-color: #4caf50;
+}
+
+.compare-icon {
+  font-size: 2.5em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.compare-card h3 {
+  font-size: 1.15em;
+  font-weight: 900;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.compare-insect h3 { color: #e65100; }
+.compare-arachnid h3 { color: #6a1b9a; }
+.compare-crustacean h3 { color: #1565c0; }
+.compare-myriapod h3 { color: #2e7d32; }
+
+.compare-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.compare-card li {
+  padding: 7px 12px;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  font-size: 0.85em;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.6;
+  border-right: 3px solid;
+}
+
+.compare-insect li { border-right-color: #ff9800; }
+.compare-arachnid li { border-right-color: #9c27b0; }
+.compare-crustacean li { border-right-color: #2196f3; }
+.compare-myriapod li { border-right-color: #4caf50; }
+
+.compare-card li b {
+  color: #00695c;
+}
+
+/* ==========================================
+   لیست گروه‌ها
+========================================== */
+.props-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.prop-card {
+  padding: 16px;
+  background: white;
+  border: 2px solid #e0f2f1;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.prop-card:active {
+  transform: scale(0.97);
+  border-color: #009688;
+}
+
+.prop-icon {
+  font-size: 2em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.prop-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.prop-desc {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .compare-icon { font-size: 2em; }
+  .compare-card h3 { font-size: 1em; }
+  .compare-card li { font-size: 0.78em; padding: 6px 10px; }
+  .prop-icon { font-size: 1.7em; }
+}
+
+/* تبلت */
+@media (min-width: 600px) {
+  .compare-grid { grid-template-columns: repeat(2, 1fr); }
+  .props-list { grid-template-columns: repeat(2, 1fr); }
+}

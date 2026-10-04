@@ -1,0 +1,179 @@
+/* ==========================================
+   فصل ۲ ریاضی — عددهای حقیقی
+========================================== */
+
+@import url('math-lesson1.css');
+
+/* ==========================================
+   دیاگرام مجموعه‌ها
+========================================== */
+.sets-diagram {
+  display: flex;
+  justify-content: center;
+  padding: 16px 8px;
+  margin-top: 12px;
+}
+
+.set-box {
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 12px;
+  position: relative;
+  text-align: center;
+}
+
+.set-label {
+  font-size: 0.85em;
+  font-weight: 900;
+  margin-bottom: 8px;
+  direction: ltr;
+}
+
+.set-R {
+  border-color: #3f51b5;
+  background: #e8eaf6;
+  width: 100%;
+  max-width: 340px;
+}
+.set-R .set-label { color: #1a237e; }
+
+.set-inner {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.set-Q {
+  border-color: #2196f3;
+  background: #e3f2fd;
+  flex: 1;
+  min-width: 120px;
+  padding: 8px;
+}
+.set-Q .set-label { color: #1565c0; font-size: 0.75em; }
+
+.set-I {
+  border-color: #9c27b0;
+  background: #f3e5f5;
+  min-width: 60px;
+  padding: 8px;
+}
+.set-I .set-label { color: #6a1b9a; font-size: 0.75em; }
+
+.set-Z {
+  border-color: #4caf50;
+  background: #e8f5e9;
+  padding: 6px;
+}
+.set-Z .set-label { color: #2e7d32; font-size: 0.7em; }
+
+.set-W {
+  border-color: #ff9800;
+  background: #fff3e0;
+  padding: 5px;
+}
+.set-W .set-label { color: #e65100; font-size: 0.65em; }
+
+.set-N {
+  border-color: #f44336;
+  background: #ffebee;
+  padding: 4px 10px;
+}
+.set-N .set-label { color: #c62828; font-size: 0.6em; margin: 0; }
+
+/* ==========================================
+   فرمول رادیکال
+========================================== */
+.formula-box {
+  background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 100%);
+  padding: 24px 16px;
+  border-radius: 16px;
+  border: 2px solid #3f51b5;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.formula-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+
+.radical-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.radical-visual {
+  font-family: 'Georgia', serif;
+  font-size: 3.5em;
+  font-weight: 700;
+  color: #1a237e;
+  direction: ltr;
+  line-height: 1;
+}
+
+.radicand {
+  border-top: 4px solid #1a237e;
+  padding: 0 14px;
+  display: inline-block;
+}
+
+.radical-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label-radicand,
+.label-result {
+  font-size: 0.9em;
+  color: #333;
+  font-weight: 600;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  line-height: 1.7;
+}
+
+.label-radicand {
+  border-right: 4px solid #4caf50;
+}
+
+.label-result {
+  border-right: 4px solid #ff9800;
+}
+
+/* ==========================================
+   جدول رادیکال
+========================================== */
+.conj-table .arabic {
+  font-family: 'Georgia', serif;
+  direction: ltr;
+  font-weight: 900;
+  font-size: 1.1em;
+  color: #1a237e;
+}
+
+.conj-table .meaning-cell {
+  font-family: 'Georgia', 'Vazirmatn', serif;
+  direction: rtl;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .radical-visual { font-size: 2.8em; }
+  .set-box { padding: 8px; }
+  .set-label { font-size: 0.7em; }
+  .set-Q .set-label,
+  .set-I .set-label { font-size: 0.65em; }
+  .set-Z .set-label { font-size: 0.6em; }
+  .set-W .set-label { font-size: 0.55em; }
+  .set-N .set-label { font-size: 0.55em; }
+}

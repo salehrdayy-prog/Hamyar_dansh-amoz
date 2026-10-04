@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e91e63">
+  <title>درس ۱: اصول طراحی — نقاشی نهم</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="art-style.css">
+  <link rel="stylesheet" href="art-lesson1.css">
+</head>
+<body>
+
+  <header class="app-header art-header">
+    <a href="art.html" class="back-btn">→</a>
+    <h1>🎨 درس ۱</h1>
+    <p class="subtitle">اصول طراحی</p>
+  </header>
+
+  <nav class="lesson-tabs">
+    <button class="lesson-tab active" data-tab="learn">📖 آموزش</button>
+    <button class="lesson-tab" data-tab="elements">🎯 عناصر</button>
+    <button class="lesson-tab" data-tab="practice">✏️ تمرین</button>
+    <button class="lesson-tab" data-tab="quiz">📝 آزمون</button>
+    <button class="lesson-tab" data-tab="game">🎮 بازی</button>
+  </nav>
+
+  <!-- تب ۱: آموزش -->
+  <section class="lesson-section active" data-section="learn">
+
+    <div class="card">
+      <h2>🎨 طراحی چیست؟</h2>
+      <p class="card-hint">
+        طراحی، زبان جهانی هنر است. با خطوط ساده شروع می‌شود و به تصاویر زیبا تبدیل می‌شود.
+      </p>
+
+      <div class="motel-types">
+        <div class="motel-card motel-mithal">
+          <div class="motel-icon">✏️</div>
+          <h3>خط (Line)</h3>
+          <p>پایه همه طراحی‌ها</p>
+          <div class="motel-example">— | / \ ○</div>
+        </div>
+
+        <div class="motel-card motel-ajwaf">
+          <div class="motel-icon">⬛</div>
+          <h3>شکل (Shape)</h3>
+          <p>ترکیب خطوط</p>
+          <div class="motel-example">□ △ ○</div>
+        </div>
+
+        <div class="motel-card motel-naqes">
+          <div class="motel-icon">🌓</div>
+          <h3>سایه (Shade)</h3>
+          <p>حجم و عمق</p>
+          <div class="motel-example">░ ▒ ▓ █</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📏 ابزارهای طراحی</h2>
+
+      <table class="conj-table">
+        <thead>
+          <tr>
+            <th>ابزار</th>
+            <th>کاربرد</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="arabic">✏️ مداد H</td><td class="meaning-cell">خطوط نازک و روشن</td></tr>
+          <tr><td class="arabic">✏️ مداد B</td><td class="meaning-cell">خطوط ضخیم و تیره</td></tr>
+          <tr><td class="arabic">✏️ مداد HB</td><td class="meaning-cell">مداد معمولی</td></tr>
+          <tr><td class="arabic">📄 کاغذ طراحی</td><td class="meaning-cell">سطح صاف برای کشیدن</td></tr>
+          <tr><td class="arabic">🧽 پاک‌کن</td><td class="meaning-cell">پاک کردن اشتباهات</td></tr>
+          <tr><td class="arabic">📏 خط‌کش</td><td class="meaning-cell">کشیدن خطوط صاف</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>💡 نکات مهم برای مبتدی‌ها</h2>
+
+      <div class="tip-box">
+        <strong>۱. سبک شروع کن</strong>
+        <p>اول با خطوط نازک و روشن شروع کن. بعد تیره‌تر کن.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>۲. صبور باش</strong>
+        <p>طراحی خوب زمان می‌برد. عجله نکن.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>۳. هر روز تمرین کن</strong>
+        <p>حتی ۱۰ دقیقه در روز، تأثیر بزرگی دارد.</p>
+      </div>
+
+      <div class="tip-box" style="margin-top:10px">
+        <strong>۴. از اشتباه نترس</strong>
+        <p>هر طراحی، یک تمرین است. اشتباهات بهترین معلم هستند.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- تب ۲: عناصر -->
+  <section class="lesson-section" data-section="elements">
+
+    <div class="card">
+      <h2>🎯 عناصر اصلی طراحی</h2>
+      <p class="card-hint">روی هر عنصر بزن تا مثال ببینی</p>
+
+      <div class="motel-tabs">
+        <button class="motel-tab active" data-type="line">✏️ خط</button>
+        <button class="motel-tab" data-type="shape">⬛ شکل</button>
+        <button class="motel-tab" data-type="shade">🌓 سایه</button>
+        <button class="motel-tab" data-type="light">💡 نور</button>
+      </div>
+
+      <div id="elementsList" class="elements-list"></div>
+    </div>
+
+  </section>
+
+  <!-- تب ۳: تمرین -->
+  <section class="lesson-section" data-section="practice">
+    <div class="card">
+      <h2>✏️ تمرین</h2>
+      <p class="card-hint">پاسخ درست را انتخاب کن</p>
+
+      <div id="practiceArea">
+        <p id="practiceQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="practiceOptions" class="options"></div>
+        <button id="nextPractice" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <button id="startPractice" class="btn-primary">شروع تمرین</button>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="practiceScore">0</span> / <span id="practiceTotal">0</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- تب ۴: آزمون -->
+  <section class="lesson-section" data-section="quiz">
+    <div class="card">
+      <h2>📝 آزمون (۱۵ سؤال)</h2>
+
+      <div id="quizArea">
+        <p id="quizQuestion" class="question-box">برای شروع، دکمه زیر را بزن</p>
+        <div id="quizOptions" class="options"></div>
+        <button id="nextQuestion" class="btn-primary" style="display:none;">سؤال بعدی ➡️</button>
+      </div>
+
+      <div class="score-box">
+        🎯 امتیاز: <span id="quizScore">0</span> / <span id="quizTotal">0</span>
+      </div>
+
+      <button id="startQuiz" class="btn-primary">شروع آزمون</button>
+    </div>
+  </section>
+
+  <!-- تب ۵: بازی -->
+  <section class="lesson-section" data-section="game">
+    <div class="card">
+      <h2>🎮 بازی: تشخیص سریع!</h2>
+      <p class="game-info">⏱️ زمان: <span id="timer">۶۰</span> ثانیه | 🏆 امتیاز: <span id="gameScore">۰</span></p>
+
+      <div id="gameArea">
+        <p id="gameQuestion" class="question-box">دکمه شروع را بزن!</p>
+        <div id="gameOptions" class="options"></div>
+      </div>
+
+      <button id="startGame" class="btn-primary">شروع بازی</button>
+    </div>
+  </section>
+
+  <footer class="app-footer">
+    <p>همیار دانش‌آموز — نقاشی نهم — درس ۱</p>
+  </footer>
+
+  <script src="art-lesson1.js"></script>
+</body>
+</html>

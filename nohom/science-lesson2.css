@@ -1,0 +1,492 @@
+/* ==========================================
+   فصل ۲ علوم — رفتار اتم‌ها
+========================================== */
+
+@import url('science-lesson1.css');
+
+/* ==========================================
+   دیاگرام اتم
+========================================== */
+.atom-diagram {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nucleus {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle, #ff5722 0%, #d84315 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  flex-wrap: wrap;
+  padding: 6px;
+  box-shadow: 0 0 30px rgba(255, 87, 34, 0.5);
+  z-index: 3;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 30px rgba(255, 87, 34, 0.5); }
+  50% { box-shadow: 0 0 45px rgba(255, 87, 34, 0.8); }
+}
+
+.nucleus span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 900;
+  color: white;
+}
+
+.proton {
+  background: #f44336;
+  border: 1px solid white;
+}
+
+.neutron {
+  background: #607d8b;
+  border: 1px solid white;
+}
+
+.orbit {
+  position: absolute;
+  border: 2px dashed rgba(0, 150, 136, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit-1 {
+  width: 140px;
+  height: 140px;
+  animation: rotate 8s linear infinite;
+}
+
+.orbit-2 {
+  width: 220px;
+  height: 220px;
+  animation: rotate 12s linear infinite reverse;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.electron {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #2196f3;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 900;
+  box-shadow: 0 0 10px rgba(33, 150, 243, 0.7);
+}
+
+.orbit-1 .electron:nth-child(1) { top: -8px; left: 50%; transform: translateX(-50%); }
+.orbit-1 .electron:nth-child(2) { bottom: -8px; left: 50%; transform: translateX(-50%); }
+
+.orbit-2 .electron:nth-child(1) { top: -8px; left: 50%; transform: translateX(-50%); }
+.orbit-2 .electron:nth-child(2) { bottom: -8px; left: 50%; transform: translateX(-50%); }
+.orbit-2 .electron:nth-child(3) { top: 50%; right: -8px; transform: translateY(-50%); }
+
+/* ==========================================
+   شبکه پیوندها
+========================================== */
+.bond-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.bond-card {
+  padding: 22px 18px;
+  border-radius: 16px;
+  border: 2px solid;
+  text-align: center;
+}
+
+.bond-card.ionic-bond {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+  border-color: #ff9800;
+}
+
+.bond-card.covalent-bond {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-color: #2196f3;
+}
+
+.bond-card.metallic-bond {
+  background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+  border-color: #9c27b0;
+}
+
+.bond-icon { font-size: 2.5em; margin-bottom: 8px; }
+
+.bond-card h3 {
+  font-size: 1.15em;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.ionic-bond h3 { color: #e65100; }
+.covalent-bond h3 { color: #1565c0; }
+.metallic-bond h3 { color: #6a1b9a; }
+
+.bond-desc {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.bond-example {
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #333;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  direction: ltr;
+}
+
+/* ==========================================
+   لیست ساختار
+========================================== */
+.props-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.prop-card {
+  padding: 16px;
+  background: white;
+  border: 2px solid #e0f2f1;
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.prop-card:active {
+  transform: scale(0.97);
+  border-color: #009688;
+}
+
+.prop-icon {
+  font-size: 2em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.prop-title {
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.prop-desc {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ==========================================
+   جدول تناوبی عنصرها
+========================================== */
+
+/* راهنمای رنگ */
+.element-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f5fffe;
+  border-radius: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #555;
+}
+
+.legend-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.legend-dot.metal { background: #ff9800; }
+.legend-dot.nonmetal { background: #4caf50; }
+.legend-dot.noble { background: #9c27b0; }
+.legend-dot.metalloid { background: #2196f3; }
+
+/* شبکه جدول */
+.periodic-table {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  margin-bottom: 16px;
+  padding: 10px;
+  background: #f5fffe;
+  border-radius: 14px;
+}
+
+/* کارت عنصر */
+.element-cell {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid;
+  padding: 4px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Georgia', 'Vazirmatn', serif;
+}
+
+.element-cell:active {
+  transform: scale(0.9);
+}
+
+.element-cell.metal {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  border-color: #ff9800;
+  color: #e65100;
+}
+
+.element-cell.nonmetal {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  border-color: #4caf50;
+  color: #2e7d32;
+}
+
+.element-cell.noble {
+  background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+  border-color: #9c27b0;
+  color: #6a1b9a;
+}
+
+.element-cell.metalloid {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-color: #2196f3;
+  color: #1565c0;
+}
+
+.element-cell.active {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 3px #009688, 0 8px 20px rgba(0, 150, 136, 0.4);
+  z-index: 2;
+}
+
+.element-number {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  font-size: 0.6em;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.element-symbol {
+  font-size: 1.3em;
+  font-weight: 900;
+  direction: ltr;
+  line-height: 1;
+}
+
+.element-name {
+  font-size: 0.55em;
+  font-weight: 700;
+  direction: rtl;
+  margin-top: 2px;
+  opacity: 0.85;
+  text-align: center;
+}
+
+/* ==========================================
+   جزئیات عنصر
+========================================== */
+.element-detail {
+  padding: 16px;
+  min-height: 180px;
+  background: linear-gradient(135deg, #f5fffe, #e0f2f1);
+  border-radius: 14px;
+  border: 2px dashed #009688;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-placeholder {
+  text-align: center;
+  color: #009688;
+}
+
+.placeholder-icon {
+  font-size: 2.5em;
+  margin-bottom: 8px;
+}
+
+.detail-placeholder p {
+  font-size: 0.95em;
+  font-weight: 600;
+}
+
+/* کارت جزئیات کامل */
+.detail-card {
+  width: 100%;
+  text-align: right;
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #009688;
+}
+
+.detail-symbol-big {
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Georgia', serif;
+  flex-shrink: 0;
+  border: 2px solid;
+}
+
+.detail-symbol-big .num {
+  font-size: 0.7em;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.detail-symbol-big .sym {
+  font-size: 1.6em;
+  font-weight: 900;
+  direction: ltr;
+  line-height: 1;
+}
+
+.detail-title {
+  flex: 1;
+}
+
+.detail-title h3 {
+  font-size: 1.3em;
+  font-weight: 900;
+  color: #00695c;
+  margin-bottom: 4px;
+}
+
+.detail-title p {
+  font-size: 0.9em;
+  color: #666;
+  font-weight: 600;
+}
+
+.detail-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.info-item {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.info-label {
+  display: block;
+  font-size: 0.75em;
+  color: #888;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  display: block;
+  font-size: 1.05em;
+  font-weight: 900;
+  color: #00695c;
+  direction: ltr;
+}
+
+/* ==========================================
+   موبایل کوچک
+========================================== */
+@media (max-width: 360px) {
+  .atom-diagram { width: 200px; height: 200px; }
+  .orbit-1 { width: 120px; height: 120px; }
+  .orbit-2 { width: 180px; height: 180px; }
+  .nucleus { width: 60px; height: 60px; }
+  .nucleus span { width: 15px; height: 15px; font-size: 10px; }
+  .bond-icon { font-size: 2em; }
+  .periodic-table {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+    padding: 6px;
+  }
+  .element-symbol { font-size: 1.1em; }
+  .element-name { font-size: 0.5em; }
+  .element-number { font-size: 0.55em; }
+  .detail-symbol-big { width: 60px; height: 60px; }
+  .detail-symbol-big .sym { font-size: 1.3em; }
+}
+
+/* ==========================================
+   تبلت
+========================================== */
+@media (min-width: 600px) {
+  .bond-grid { grid-template-columns: repeat(3, 1fr); }
+  .props-list { grid-template-columns: repeat(2, 1fr); }
+  .periodic-table {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .detail-info {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
